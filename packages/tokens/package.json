@@ -1,0 +1,22 @@
+{
+  "name": "@studio-drishti/gaze-tokens",
+  "version": "0.0.0",
+  "description": "Gaze Design System Tokens",
+  "main": "./dist/css/variables.css",
+  "exports": {
+    "./css/": "./dist/css/"
+  },
+  "license": "MIT",
+  "files": [
+    "dist/**"
+  ],
+  "scripts": {
+    "dev": "npm run build && chokidar  \"src/tokens/**/*.json\" -c \"npm run build\"",
+    "build": "npm run clean && style-dictionary build",
+    "clean": "style-dictionary clean"
+  },
+  "devDependencies": {
+    "chokidar-cli": "3.0.0",
+    "style-dictionary": "^3.7.2"
+  }
+}

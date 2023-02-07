@@ -6,5 +6,8 @@
     "base.json",
     "nextjs.json",
     "react-library.json"
-  ]
+  ],
+  "dependencies": {
+    "typescript-plugin-css-modules": "^4.1.1"
+  }
 }

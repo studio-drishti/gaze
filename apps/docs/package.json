@@ -21,6 +21,7 @@
     "@storybook/manager-webpack5": "^6.5.15",
     "@storybook/react": "^6.5.15",
     "@storybook/testing-library": "^0.0.13",
+    "@studio-drishti/gaze-tokens": "*",
     "@studio-drishti/tsconfig-gaze": "*",
     "@types/react": "^18.0.26",
     "@types/react-dom": "^18.0.9",

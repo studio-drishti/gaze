@@ -1,0 +1,4 @@
+.button {
+  background: blue;
+  padding: var(--size-space-20);
+}

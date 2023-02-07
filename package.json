@@ -1,5 +1,5 @@
 {
-  "name": "@studio-drishti/gaze",
+  "name": "gaze",
   "version": "0.0.0",
   "private": true,
   "workspaces": [
@@ -13,13 +13,14 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
-    "@studio-drishti/eslint-config-gaze": "*",
+    "@gaze/eslint-config": "*",
+    "@gaze/tsconfig": "*",
+    "eslint-config-turbo": "0.0.7",
     "prettier": "latest",
     "turbo": "latest",
     "webpack": "^5.75.0"
   },
   "engines": {
     "node": ">=14.0.0"
-  },
-  "packageManager": "npm@8.19.2"
+  }
 }

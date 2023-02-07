@@ -1,3 +1,7 @@
 {
-  "extends": "@studio-drishti/tsconfig-gaze/react-library.json"
+  "extends": "@gaze/tsconfig/react-library.json",
+  "include": [".storybook"],
+  "compilerOptions": {
+    "isolatedModules": false
+  }
 }

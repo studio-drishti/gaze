@@ -1,5 +1,5 @@
 {
-  "name": "@studio-drishti/tsconfig-gaze",
+  "name": "@gaze/tsconfig",
   "version": "0.0.0",
   "private": true,
   "files": [

@@ -1,4 +1,5 @@
-import "@studio-drishti/gaze-tokens/css/variables.css";
+import "@gaze/tokens/css/variables.css";
+import "@gaze/ui/styles/base.css";
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },

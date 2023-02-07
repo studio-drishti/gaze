@@ -1,5 +1,5 @@
 {
-  "name": "@studio-drishti/gaze-tokens",
+  "name": "@gaze/tokens",
   "version": "0.0.0",
   "description": "Gaze Design System Tokens",
   "main": "./dist/css/variables.css",

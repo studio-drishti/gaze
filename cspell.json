@@ -1,8 +1,8 @@
 {
   "version": "0.2",
   "language": "en",
-  "words": ["drishti", "nextjs"],
-  "ignoreWords": ["eamodio", "dbaeumer", "esbenp"],
+  "words": ["drishti"],
+  "ignoreWords": ["eamodio", "dbaeumer", "esbenp", "sonarjs", "nextjs"],
   "flagWords": ["hte"],
   "allowCompoundWords": true,
   "ignorePaths": [

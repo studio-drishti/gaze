@@ -1,0 +1,13 @@
+.small {
+}
+
+.large {
+}
+
+.text {
+  margin: 0;
+}
+
+[data-invert="true"] .text {
+  color: var(--color-white);
+}

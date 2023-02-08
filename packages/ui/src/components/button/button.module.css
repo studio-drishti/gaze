@@ -1,4 +1,14 @@
 .button {
-  background: blue;
-  padding: var(--size-space-20);
+  cursor: pointer;
+  border: none;
+  background: none;
+  display: inline-block;
+  text-decoration: none;
+  appearance: none;
+}
+
+.secondary {
+}
+
+.small {
 }

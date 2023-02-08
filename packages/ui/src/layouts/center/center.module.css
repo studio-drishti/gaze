@@ -1,0 +1,16 @@
+.center {
+  box-sizing: content-box;
+  max-inline-size: var(--max-width);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+.textCenter {
+  text-align: center;
+}
+
+.intrinsicCenter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

@@ -1,0 +1,4 @@
+.box {
+  padding: var(--py, 0) var(--px, 0);
+  background: var(--background, var(--color-white));
+}

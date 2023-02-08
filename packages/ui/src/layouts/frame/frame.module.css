@@ -1,0 +1,13 @@
+.frame {
+  aspect-ratio: var(--aspect-ratio);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.frame > * {
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+}

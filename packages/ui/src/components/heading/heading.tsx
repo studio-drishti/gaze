@@ -7,19 +7,18 @@ const cx = classNames.bind(styles);
 type HeadingLevelOptions = "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
 
 export interface HeadingProps {
-  as?: HeadingLevelOptions;
+  as: HeadingLevelOptions;
   variant?: HeadingLevelOptions;
   children: NonNullable<React.ReactNode>;
   className?: string;
 }
 
 export const Heading = React.forwardRef<HTMLHeadingElement, HeadingProps>(
-  ({ as, variant, children, className }, ref) => {
-    const HeadingComponent = as || "h2";
-    const headingVariant = variant || as || "h2";
+  ({ as: HeadingComponent, variant, children, className }, ref) => {
+    const headingVariant = variant || HeadingComponent;
     return (
       <HeadingComponent
-        className={cx({ [headingVariant]: true }, className)}
+        className={cx("heading", headingVariant, className)}
         ref={ref}
       >
         {children}

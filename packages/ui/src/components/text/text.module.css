@@ -1,11 +1,12 @@
-.small {
-}
-
-.large {
-}
-
 .text {
+  font-family: var(--body-font, var(--font-sans));
+  font-size: var(--size, var(--size-font-base));
+  line-height: var(--leading, var(--leading-normal));
   margin: 0;
+}
+
+.strong {
+  font-weight: var(--weight-bold);
 }
 
 [data-invert="true"] .text {

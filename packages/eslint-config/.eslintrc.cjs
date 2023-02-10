@@ -112,6 +112,7 @@ module.exports = {
       files: ["*.{test,stories}.{ts,tsx,js,jsx}"],
       rules: {
         "react/display-name": "off",
+        "react/no-unescaped-entities": "off",
         "sonarjs/no-duplicate-string": "off",
       },
     },

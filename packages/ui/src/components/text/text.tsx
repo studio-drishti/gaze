@@ -4,26 +4,30 @@ import styles from "./text.module.css";
 
 const cx = classNames.bind(styles);
 
-type TextVariantOptions =
-  | "info"
-  | "large"
-  | "legal"
-  | "medium"
-  | "regular"
-  | "small";
-type TextElementOptions = "div" | "p" | "span";
+type TextElementOptions = "em" | "p" | "span" | "strong";
 
 export interface TextProps {
   as?: TextElementOptions;
-  variant?: TextVariantOptions;
+  fontSize?: `var(--${string})`;
+  leading?: `var(--${string})`;
   children: NonNullable<React.ReactNode>;
 }
 
-export const Text = React.forwardRef<HTMLHeadingElement, TextProps>(
-  ({ as, variant = "regular", children }, ref) => {
+export const Text = React.forwardRef<HTMLElement, TextProps>(
+  ({ as, fontSize, leading, children }, ref) => {
     const TextComponent = as || "p";
+    const cssProperties: React.CSSProperties = {};
+
+    if (fontSize) {
+      cssProperties["--size"] = fontSize;
+    }
+
+    if (leading) {
+      cssProperties["--leading"] = leading;
+    }
+
     return (
-      <TextComponent className={cx({ text: true, [variant]: true })} ref={ref}>
+      <TextComponent className={cx("text")} ref={ref} style={cssProperties}>
         {children}
       </TextComponent>
     );

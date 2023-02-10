@@ -8,7 +8,9 @@ export default {
 } as ComponentMeta<typeof Heading>;
 
 const Template: ComponentStory<typeof Heading> = (args) => (
-  <Heading {...args}>Grow your audience and your revenue</Heading>
+  <Heading {...args}>
+    Who are you going to believe, me or your own eyes?
+  </Heading>
 );
 
 export const Heading1 = Template.bind({});

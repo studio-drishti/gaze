@@ -9,18 +9,19 @@ export default {
 
 const Template: ComponentStory<typeof Text> = (args) => (
   <Text {...args}>
-    Create engaging emails easily in Mailchimp to grow your brand and sell more
-    stuff. Our email tools will help your business get the most out of your
-    email marketing.
+    Outside of a dog, a book is man's best friend. Inside of a dog, it's too
+    dark to read.
   </Text>
 );
 
-export const Small = Template.bind({});
-Small.args = {
-  variant: "small",
-};
+export const Normal = Template.bind({});
 
 export const Large = Template.bind({});
 Large.args = {
-  variant: "large",
+  fontSize: "var(--size-font-2xl)",
+};
+
+export const Strong = Template.bind({});
+Strong.args = {
+  as: "strong",
 };

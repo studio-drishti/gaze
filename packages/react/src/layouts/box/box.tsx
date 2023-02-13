@@ -5,7 +5,7 @@ import styles from "./box.module.css";
 const cx = classNames.bind(styles);
 
 export interface BoxProps {
-  as?: "div" | "header" | "main";
+  as?: "article" | "div" | "header" | "main" | "section";
   children?: React.ReactNode;
   className?: string;
   paddingX?: `var(--${string})`;

@@ -1,0 +1,27 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--size-space-50);
+  border-bottom: 1px solid var(--color-zinc-800);
+  position: relative;
+  align-items: center;
+}
+
+.header::before,
+.header::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 25%;
+  bottom: 0;
+  width: 1px;
+  background: var(--color-zinc-800);
+}
+
+.header::before {
+  left: 0;
+}
+
+.header::after {
+  right: 0;
+}

@@ -7,7 +7,7 @@ Gaze is a highly customizable React design system heavily inspired by Chakra UI 
 Gaze ships with a comprehensive set of design tokens based largely on utilities from Tailwind CSS. It is necessary to install both the `ui` and `tokens` package.
 
 ```bash
-npm install --save @gaze/ui @gaze/tokens
+npm install --save @gaze/react @gaze/tokens
 ```
 
 You may optionally wish to use the Gaze ESLint and TypeScript configurations as a base for your project.

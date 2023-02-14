@@ -5,6 +5,7 @@ import { Header } from "../components/header";
 import { AboutMe } from "../components/about-me/about-me";
 import { Title } from "../components/title";
 import { Skills } from "@/components/skills";
+import { Footer } from "@/components/footer";
 
 export default function Home() {
   return (
@@ -19,6 +20,8 @@ export default function Home() {
         <AboutMe />
         <Title>Skills</Title>
         <Skills />
+        <Title>Projects</Title>
+        <Footer />
       </Stack>
     </>
   );

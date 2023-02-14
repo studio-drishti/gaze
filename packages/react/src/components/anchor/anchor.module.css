@@ -1,0 +1,15 @@
+.anchor {
+  text-decoration: underline;
+  color: inherit;
+  cursor: pointer;
+}
+
+.anchor:hover {
+  text-decoration: none;
+}
+
+.anchor:focus {
+  outline-color: var(--outline-color, var(--color-cyan-500));
+  outline-offset: 0.25em;
+  --moz-outline-radius: var(--size-radius-base);
+}

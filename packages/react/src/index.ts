@@ -1,3 +1,4 @@
+export * from "./components/anchor";
 export * from "./components/heading";
 export * from "./components/text";
 export * from "./layouts/box";

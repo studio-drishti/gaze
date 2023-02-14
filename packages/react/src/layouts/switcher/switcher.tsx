@@ -25,7 +25,7 @@ export const Switcher = React.forwardRef<HTMLDivElement, SwitcherProps>(
           limit4: limit === 4,
         })}
         ref={ref}
-        style={{ ["--threshold"]: threshold, ["--space"]: space }}
+        style={{ ["--threshold"]: threshold, ["--switcher-space"]: space }}
       >
         {children}
       </div>

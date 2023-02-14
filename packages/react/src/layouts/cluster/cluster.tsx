@@ -16,7 +16,7 @@ export const Cluster = React.forwardRef<HTMLDivElement, ClusterProps>(
       <div
         className={cx("cluster", className)}
         ref={ref}
-        style={{ ["--space"]: space }}
+        style={{ ["--cluster-space"]: space }}
       >
         {children}
       </div>

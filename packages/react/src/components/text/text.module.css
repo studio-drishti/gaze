@@ -1,14 +1,12 @@
 .text {
+  color: var(--text-color, var(--color-black));
   font-family: var(--body-font, var(--font-sans));
+  font-weight: var(--body-weight, var(--weight-normal));
   font-size: var(--size, var(--size-font-base));
   line-height: var(--leading, var(--leading-normal));
   margin: 0;
 }
 
-.strong {
-  font-weight: var(--weight-bold);
-}
-
 [data-invert="true"] .text {
-  color: var(--color-white);
+  color: var(--text-color-inverted, var(--color-white));
 }

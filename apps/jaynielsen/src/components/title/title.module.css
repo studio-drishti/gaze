@@ -1,0 +1,24 @@
+.title {
+  position: relative;
+}
+
+.title::before {
+  content: "";
+  display: block;
+  height: 1px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  background: var(--text-color);
+}
+
+.heading {
+  background: var(--color-white);
+  position: relative;
+  display: inline-flex;
+  padding: 0 calc(var(--size-space-100) - 1px);
+  border: 1px solid var(--text-color);
+  border-width: 0 1px;
+  text-transform: uppercase;
+}

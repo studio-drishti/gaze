@@ -9,6 +9,10 @@
 .icon {
   align-items: center;
   display: inline-flex;
+  color: var(--color, var(--text-color));
+  font-size: var(--icon-size, inherit);
+  font-family: var(--body-font, var(--font-sans));
+  font-weight: var(--body-weight, var(--weight-normal));
 }
 
 .withText {
@@ -17,4 +21,8 @@
 
 .withText > svg {
   margin-inline-end: var(--icon-space, 0.5em);
+}
+
+[data-invert="true"] .icon {
+  color: var(--color-white);
 }

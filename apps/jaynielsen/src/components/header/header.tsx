@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Box, Cluster, Center, Icon, Text } from "@gaze/react";
+import { Box, Cluster, Center, Icon, Text, Heading } from "@gaze/react";
 import {
   IconBrandGithub,
   IconBrandInstagram,
@@ -13,15 +13,13 @@ const cx = classNames.bind(styles);
 export const Header = (): JSX.Element => (
   <Center maxWidth="60rem">
     <Box as="header" className={cx("header")}>
-      <Text fontSize="var(--size-font-2xl)">Jay Nielsen</Text>
+      <Heading as="h1" variant="h5">
+        JAY NIELSEN
+      </Heading>
       <Cluster space="var(--size-space-10)" className={cx("social")}>
-        <a
-          href="https://www.instagram.com/jayarnielsen/"
-          target="_blank"
-          rel="nofollow"
-        >
+        <a href="https://github.com/jnlsn/" target="_blank" rel="nofollow">
           <Icon label="GitHub">
-            <IconBrandGithub color="var(--color-slate-500)" />
+            <IconBrandGithub stroke="1.5" />
           </Icon>
         </a>
         <a
@@ -30,16 +28,16 @@ export const Header = (): JSX.Element => (
           rel="nofollow"
         >
           <Icon label="LinkedIn">
-            <IconBrandLinkedin color="var(--color-slate-500)" />
+            <IconBrandLinkedin stroke="1.5" />
           </Icon>
         </a>
         <a
-          href="https://www.instagram.com/jayarnielsen/"
+          href="https://instagram.com/jayarnielsen/"
           target="_blank"
           rel="nofollow"
         >
           <Icon label="Instagram">
-            <IconBrandInstagram color="var(--color-slate-500)" />
+            <IconBrandInstagram stroke="1.5" />
           </Icon>
         </a>
       </Cluster>

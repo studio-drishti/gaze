@@ -1,4 +1,3 @@
-export * from "./components/button";
 export * from "./components/heading";
 export * from "./components/text";
 export * from "./layouts/box";
@@ -7,5 +6,6 @@ export * from "./layouts/cluster";
 export * from "./layouts/frame";
 export * from "./layouts/grid";
 export * from "./layouts/icon";
+export * from "./layouts/sidebar";
 export * from "./layouts/stack";
 export * from "./layouts/switcher";

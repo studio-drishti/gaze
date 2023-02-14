@@ -20,8 +20,3 @@ export const Large = Template.bind({});
 Large.args = {
   fontSize: "var(--size-font-2xl)",
 };
-
-export const Strong = Template.bind({});
-Strong.args = {
-  as: "strong",
-};

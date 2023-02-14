@@ -8,15 +8,19 @@ export interface GridProps {
   children: React.ReactNode;
   space?: `var(--${string})`;
   minimum: string;
+  className?: string;
 }
 
 export const Grid = React.forwardRef<HTMLDivElement, GridProps>(
-  ({ children, space = "var(--size-space-0)", minimum }, ref): JSX.Element => {
+  (
+    { children, space = "var(--size-space-0)", minimum, className },
+    ref
+  ): JSX.Element => {
     return (
       <div
-        className={cx({ grid: true })}
+        className={cx("grid", className)}
         ref={ref}
-        style={{ ["--space"]: space, ["--minimum"]: minimum }}
+        style={{ ["--grid-space"]: space, ["--minimum"]: minimum }}
       >
         {children}
       </div>

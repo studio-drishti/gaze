@@ -4,7 +4,7 @@ import styles from "./text.module.css";
 
 const cx = classNames.bind(styles);
 
-type TextElementOptions = "em" | "p" | "span" | "strong";
+type TextElementOptions = "div" | "p" | "span";
 
 export interface TextProps {
   as?: TextElementOptions;

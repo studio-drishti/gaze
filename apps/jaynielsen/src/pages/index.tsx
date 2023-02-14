@@ -3,6 +3,8 @@ import Head from "next/head";
 import { Box, Center, Stack } from "@gaze/react";
 import { Header } from "../components/header";
 import { AboutMe } from "../components/about-me/about-me";
+import { Title } from "../components/title";
+import { Skills } from "@/components/skills";
 
 export default function Home() {
   return (
@@ -15,6 +17,8 @@ export default function Home() {
       <Stack space="var(--size-space-100)">
         <Header />
         <AboutMe />
+        <Title>Skills</Title>
+        <Skills />
       </Stack>
     </>
   );

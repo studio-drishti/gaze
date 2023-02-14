@@ -6,7 +6,7 @@ const cx = classNames.bind(styles);
 
 export interface StackProps {
   children: React.ReactNode;
-  space: `var(--${string})`;
+  space: string;
   className?: string;
 }
 
@@ -16,7 +16,7 @@ export const Stack = React.forwardRef<HTMLDivElement, StackProps>(
       <div
         className={cx({ stack: true }, className)}
         ref={ref}
-        style={{ ["--space"]: space }}
+        style={{ ["--stack-space"]: space }}
       >
         {children}
       </div>

@@ -12,6 +12,7 @@ export interface BoxProps {
   paddingY?: `var(--${string})`;
   padding?: `var(--${string})`;
   background?: `var(--${string})`;
+  borderRadius?: `var(--${string})`;
   invert?: boolean;
 }
 
@@ -25,6 +26,7 @@ export const Box = React.forwardRef<HTMLElement, BoxProps>(
       paddingX,
       paddingY,
       background,
+      borderRadius,
       invert = false,
     },
     ref
@@ -44,6 +46,10 @@ export const Box = React.forwardRef<HTMLElement, BoxProps>(
 
     if (background) {
       boxProperties["--background"] = background;
+    }
+
+    if (borderRadius) {
+      boxProperties["--radius"] = borderRadius;
     }
 
     return (

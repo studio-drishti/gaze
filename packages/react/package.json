@@ -20,6 +20,7 @@
   "devDependencies": {
     "@gaze/eslint-config": "*",
     "@gaze/tsconfig": "*",
+    "@tabler/icons-react": "2.4.0",
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
     "classnames": "^2.3.2",

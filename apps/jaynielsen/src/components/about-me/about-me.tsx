@@ -7,6 +7,7 @@ export const AboutMe = (): JSX.Element => (
       as="article"
       padding="var(--size-space-100)"
       background="var(--color-purple-900)"
+      borderRadius="var(--size-radius-lg)"
       invert
     >
       <Stack space="var(--size-space-60)">

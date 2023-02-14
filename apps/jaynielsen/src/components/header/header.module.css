@@ -25,3 +25,17 @@
 .header::after {
   right: 0;
 }
+
+.social {
+  font-size: var(--size-font-4xl);
+}
+
+.social a {
+  display: inline-flex;
+}
+
+.social a:focus {
+  outline-color: var(--color-cyan-500);
+  outline-offset: 0.05em;
+  outline-radius: var(--size-radius-base);
+}

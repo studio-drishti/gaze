@@ -2,7 +2,14 @@
   "version": "0.2",
   "language": "en",
   "words": ["drishti"],
-  "ignoreWords": ["eamodio", "dbaeumer", "esbenp", "sonarjs", "nextjs"],
+  "ignoreWords": [
+    "eamodio",
+    "dbaeumer",
+    "esbenp",
+    "sonarjs",
+    "nextjs",
+    "tabler"
+  ],
   "flagWords": ["hte"],
   "allowCompoundWords": true,
   "ignorePaths": [

@@ -16,7 +16,7 @@ export interface BoxProps {
   invert?: boolean;
 }
 
-export const Box = React.forwardRef<HTMLElement, BoxProps>(
+export const Box = React.forwardRef<HTMLDivElement, BoxProps>(
   (
     {
       as,

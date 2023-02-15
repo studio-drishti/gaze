@@ -1,6 +1,6 @@
 {
   "extends": "@gaze/tsconfig/nextjs.json",
-  "include": ["src", "next-env.d.ts"],
+  "include": ["src", "next-env.d.ts", "css-properties.d.ts"],
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {

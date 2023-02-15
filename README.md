@@ -16,6 +16,20 @@ You may optionally wish to use the Gaze ESLint and TypeScript configurations as 
 npm install --save-dev @gaze/tsconfig @gaze/eslint-config
 ```
 
+## TypeScript
+
+React incorrectly disallows custom properties on the `style` property, so you will need to create a `css-properties.d.ts` file in the root of your application and include it in your tsconfig.
+
+```typescript
+import "react";
+
+declare module "react" {
+  interface CSSProperties {
+    [key: `--${string}`]: number | string;
+  }
+}
+```
+
 ## Customizing
 
 Every component may be customized by setting a custom CSS property in the `:root` space. For example...

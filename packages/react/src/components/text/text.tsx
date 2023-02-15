@@ -13,7 +13,7 @@ export interface TextProps {
   children: NonNullable<React.ReactNode>;
 }
 
-export const Text = React.forwardRef<HTMLElement, TextProps>(
+export const Text = React.forwardRef<HTMLDivElement, TextProps>(
   ({ as, fontSize, leading, children }, ref) => {
     const TextComponent = as || "p";
     const cssProperties: React.CSSProperties = {};

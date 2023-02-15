@@ -16,3 +16,7 @@
   flex-grow: 999;
   min-inline-size: var(--minimum, 50%);
 }
+
+.reverse {
+  flex-direction: row-reverse;
+}

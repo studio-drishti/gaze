@@ -7,17 +7,22 @@ const cx = classNames.bind(styles);
 export interface FrameProps {
   children: React.ReactNode;
   aspectRatio: number;
+  borderRadius: string;
   className?: string;
 }
 
 export const Frame = React.forwardRef<HTMLDivElement, FrameProps>(
-  ({ children, aspectRatio, className }, ref): JSX.Element => {
+  ({ children, aspectRatio, borderRadius, className }, ref): JSX.Element => {
+    const cssProperties: React.CSSProperties = {
+      ["--frame-ratio"]: aspectRatio,
+    };
+
+    if (borderRadius) {
+      cssProperties["--frame-radius"] = borderRadius;
+    }
+
     return (
-      <div
-        className={cx({ frame: true }, className)}
-        ref={ref}
-        style={{ ["--aspect-ratio"]: aspectRatio }}
-      >
+      <div className={cx("frame", className)} ref={ref} style={cssProperties}>
         {children}
       </div>
     );

@@ -1,9 +1,10 @@
 .frame {
-  aspect-ratio: var(--aspect-ratio);
+  aspect-ratio: var(--frame-ratio);
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: var(--frame-radius, 0);
 }
 
 .frame > * {

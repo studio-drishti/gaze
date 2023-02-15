@@ -8,11 +8,11 @@ export interface BoxProps {
   as?: "article" | "div" | "footer" | "header" | "main" | "section";
   children?: React.ReactNode;
   className?: string;
-  paddingX?: `var(--${string})`;
-  paddingY?: `var(--${string})`;
-  padding?: `var(--${string})`;
-  background?: `var(--${string})`;
-  borderRadius?: `var(--${string})`;
+  paddingX?: string;
+  paddingY?: string;
+  padding?: string;
+  background?: string;
+  borderRadius?: string;
   invert?: boolean;
 }
 

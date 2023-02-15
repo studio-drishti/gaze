@@ -10,10 +10,11 @@ export interface SidebarProps {
   space?: string;
   minimum?: string;
   children: NonNullable<React.ReactNode>;
+  reverse?: boolean;
 }
 
 export const Sidebar = React.forwardRef<HTMLDivElement, SidebarProps>(
-  ({ children, side = "left", sideWidth, space, minimum }, ref) => {
+  ({ children, side = "left", sideWidth, space, minimum, reverse }, ref) => {
     const cssProperties: React.CSSProperties = {};
 
     if (sideWidth) {
@@ -29,7 +30,11 @@ export const Sidebar = React.forwardRef<HTMLDivElement, SidebarProps>(
     }
 
     return (
-      <div className={cx("sidebar", side)} ref={ref} style={cssProperties}>
+      <div
+        className={cx({ sidebar: true, reverse: Boolean(reverse) }, side)}
+        ref={ref}
+        style={cssProperties}
+      >
         {children}
       </div>
     );

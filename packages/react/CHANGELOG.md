@@ -1,5 +1,11 @@
 # @gaze/react
 
+## 0.1.1
+
+### Patch Changes
+
+- [`871bc6e`](https://github.com/studio-drishti/gaze/commit/871bc6eb0bfeef629ef207a52ff6a28533bf8c57) Thanks [@jnlsn](https://github.com/jnlsn)! - Fixed TypeScript typings
+
 ## 0.1.0
 
 ### Minor Changes

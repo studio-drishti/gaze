@@ -1,0 +1,4 @@
+.frame {
+  border-radius: var(--size-radius-lg);
+  overflow: hidden;
+}

@@ -2,15 +2,26 @@
   position: relative;
 }
 
-.title::before {
+.title:after,
+.title:before {
   content: "";
   display: block;
-  height: 1px;
   position: absolute;
+  background: var(--text-color);
+}
+
+.title::before {
+  height: 1px;
   top: 50%;
   left: 0;
   right: 0;
-  background: var(--text-color);
+}
+
+.title::after {
+  top: 25%;
+  bottom: 25%;
+  right: 0;
+  width: 1px;
 }
 
 .heading {

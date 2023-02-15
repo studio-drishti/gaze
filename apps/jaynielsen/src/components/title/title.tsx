@@ -8,12 +8,12 @@ export interface TitleProps {
 
 export const Title = ({ children }: TitleProps): JSX.Element => {
   return (
-    <div className={styles.title}>
-      <Center maxWidth="60rem">
+    <Center maxWidth="60rem">
+      <div className={styles.title}>
         <Heading as="h2" variant="h3" className={styles.heading}>
           {children}
         </Heading>
-      </Center>
-    </div>
+      </div>
+    </Center>
   );
 };

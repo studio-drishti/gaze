@@ -1,7 +1,8 @@
 {
   "name": "@gaze/tsconfig",
+  "description": "Shareable TypeScript config for Gaze design system projects.",
+  "homepage": "https://github.com/studio-drishti/gaze#readme",
   "version": "0.0.0",
-  "private": true,
   "files": [
     "base.json",
     "nextjs.json",

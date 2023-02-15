@@ -1,15 +1,16 @@
 {
   "name": "@gaze/tokens",
+  "homepage": "https://github.com/studio-drishti/gaze#readme",
+  "description": "Gaze design system tokens.",
   "version": "0.0.0",
-  "description": "Gaze Design System Tokens",
+  "files": [
+    "dist/**"
+  ],
   "main": "./dist/css/variables.css",
   "exports": {
     "./css/": "./dist/css/"
   },
   "license": "MIT",
-  "files": [
-    "dist/**"
-  ],
   "scripts": {
     "dev": "npm run build && chokidar  \"src/tokens/**/*.json\" -c \"npm run build\"",
     "build": "npm run clean && style-dictionary build",

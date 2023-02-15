@@ -1,8 +1,13 @@
 {
   "name": "@gaze/eslint-config",
-  "version": "0.0.0",
-  "main": ".eslintrc.cjs",
+  "description": "Shareable ESlint config for projects using Gaze design system.",
+  "homepage": "https://github.com/studio-drishti/gaze#readme",
   "license": "MIT",
+  "version": "0.0.0",
+  "files": [
+    ".eslintrc.cjs"
+  ],
+  "main": ".eslintrc.cjs",
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^5.51.0",
     "@typescript-eslint/parser": "^5.51.0",

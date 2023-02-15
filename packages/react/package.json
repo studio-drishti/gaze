@@ -1,6 +1,11 @@
 {
   "name": "@gaze/react",
+  "description": "Gaze design system React components.",
+  "homepage": "https://github.com/studio-drishti/gaze#readme",
   "version": "0.0.0",
+  "files": [
+    "src/**"
+  ],
   "main": "./src/index.ts",
   "types": "./src/index.ts",
   "exports": {

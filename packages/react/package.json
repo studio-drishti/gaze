@@ -3,6 +3,14 @@
   "description": "Gaze design system React components.",
   "homepage": "https://github.com/studio-drishti/gaze#readme",
   "version": "0.0.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:studio-drishti/gaze.git",
+    "directory": "packages/react"
+  },
   "files": [
     "src/**"
   ],
@@ -17,7 +25,7 @@
     "lint": "TIMING=1 eslint \"**/*.ts*\""
   },
   "peerDependencies": {
-    "@gaze/tokens": "*",
+    "@gaze/tokens": "^0.0.0",
     "classnames": "2.x",
     "react": "18.x",
     "react-dom": "18.x"

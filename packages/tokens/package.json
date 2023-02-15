@@ -3,6 +3,14 @@
   "homepage": "https://github.com/studio-drishti/gaze#readme",
   "description": "Gaze design system tokens.",
   "version": "0.0.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:studio-drishti/gaze.git",
+    "directory": "packages/tokens"
+  },
   "files": [
     "dist/**"
   ],

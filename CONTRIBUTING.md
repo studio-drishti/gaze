@@ -5,3 +5,9 @@ The simplest way to get started is to use VSCode's Dev Container. Simply re-open
 ```bash
 npm run dev
 ```
+
+## Upgrades
+
+```bash
+npx npm-check-updates --workspaces --interactive
+```

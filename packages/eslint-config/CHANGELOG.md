@@ -1,4 +1,4 @@
-# @gaze/eslint-config
+# @gaze-ui/eslint-config
 
 ## 0.1.0
 

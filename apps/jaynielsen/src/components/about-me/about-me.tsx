@@ -1,4 +1,4 @@
-import { Box, Center, Heading, Stack, Text } from "@gaze/react";
+import { Box, Center, Heading, Stack, Text } from "@gaze-ui/react";
 import * as React from "react";
 
 export const AboutMe = (): JSX.Element => (

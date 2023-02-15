@@ -1,4 +1,4 @@
-# @gaze/tokens
+# @gaze-ui/tokens
 
 ## 0.1.0
 

@@ -1,5 +1,5 @@
 {
-  "name": "@gaze/eslint-config",
+  "name": "@gaze-ui/eslint-config",
   "description": "Shareable ESlint config for projects using Gaze design system.",
   "homepage": "https://github.com/studio-drishti/gaze#readme",
   "license": "MIT",

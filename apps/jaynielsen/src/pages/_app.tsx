@@ -2,8 +2,8 @@
 import * as React from "react";
 import type { AppProps } from "next/app";
 import { Montserrat } from "@next/font/google";
-import "@gaze/tokens/css/variables.css";
-import "@gaze/react/styles/base.css";
+import "@gaze-ui/tokens/css/variables.css";
+import "@gaze-ui/react/styles/base.css";
 
 const montserrat = Montserrat({
   weight: "300",

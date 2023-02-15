@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Center, Heading } from "@gaze/react";
+import { Center, Heading } from "@gaze-ui/react";
 import styles from "./title.module.css";
 
 export interface TitleProps {

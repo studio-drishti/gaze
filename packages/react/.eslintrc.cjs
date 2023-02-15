@@ -1,4 +1,4 @@
 module.exports = {
   root: true,
-  extends: ["@gaze"],
+  extends: ["@gaze-ui"],
 };

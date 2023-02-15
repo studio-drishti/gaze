@@ -1,5 +1,5 @@
 {
-  "name": "@gaze/docs",
+  "name": "@gaze-ui/docs",
   "private": true,
   "version": "0.0.0",
   "scripts": {
@@ -7,15 +7,15 @@
     "build": "build-storybook"
   },
   "dependencies": {
-    "@gaze/tokens": "*",
-    "@gaze/react": "*",
+    "@gaze-ui/tokens": "*",
+    "@gaze-ui/react": "*",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
   "devDependencies": {
     "@babel/core": "7.20.12",
-    "@gaze/tokens": "*",
-    "@gaze/tsconfig": "*",
+    "@gaze-ui/tokens": "*",
+    "@gaze-ui/tsconfig": "*",
     "@storybook/addon-actions": "6.5.16",
     "@storybook/addon-essentials": "6.5.16",
     "@storybook/addon-interactions": "6.5.16",

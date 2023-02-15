@@ -1,4 +1,4 @@
-# @gaze/react
+# @gaze-ui/react
 
 ## 0.1.1
 

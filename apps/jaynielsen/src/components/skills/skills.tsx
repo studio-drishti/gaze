@@ -1,4 +1,4 @@
-import { Box, Center, Grid, Heading, Icon, Sidebar, Stack } from "@gaze/react";
+import { Box, Center, Grid, Heading, Icon, Sidebar, Stack } from "@gaze-ui/react";
 import {
   IconAccessible,
   IconBook,

@@ -1,4 +1,4 @@
-import { Center, Stack } from "@gaze/react";
+import { Center, Stack } from "@gaze-ui/react";
 import * as React from "react";
 import { Project } from "./project";
 import helloWorldPic from "../../assets/hello-world.jpg";

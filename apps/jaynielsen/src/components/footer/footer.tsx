@@ -1,4 +1,4 @@
-import { Anchor, Box, Center, Text } from "@gaze/react";
+import { Anchor, Box, Center, Text } from "@gaze-ui/react";
 import * as React from "react";
 import styles from "./footer.module.css";
 

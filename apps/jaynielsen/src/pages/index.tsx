@@ -1,6 +1,6 @@
 import * as React from "react";
 import Head from "next/head";
-import { Box, Center, Stack } from "@gaze/react";
+import { Box, Center, Stack } from "@gaze-ui/react";
 import { Header } from "../components/header";
 import { AboutMe } from "../components/about-me/about-me";
 import { Title } from "../components/title";

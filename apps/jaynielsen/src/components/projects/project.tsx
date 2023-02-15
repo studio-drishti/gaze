@@ -1,4 +1,4 @@
-import { Anchor, Box, Frame, Heading, Sidebar, Stack, Text } from "@gaze/react";
+import { Anchor, Box, Frame, Heading, Sidebar, Stack, Text } from "@gaze-ui/react";
 import Image, { StaticImageData } from "next/image";
 import * as React from "react";
 

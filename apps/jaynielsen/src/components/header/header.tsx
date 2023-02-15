@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Box, Cluster, Center, Icon, Text, Heading } from "@gaze/react";
+import { Box, Cluster, Center, Icon, Text, Heading } from "@gaze-ui/react";
 import {
   IconBrandGithub,
   IconBrandInstagram,

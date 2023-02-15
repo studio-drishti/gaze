@@ -1,5 +1,5 @@
 {
-  "extends": "@gaze/tsconfig/react-library.json",
+  "extends": "@gaze-ui/tsconfig/react-library.json",
   "include": [".storybook"],
   "compilerOptions": {
     "isolatedModules": false

@@ -1,5 +1,11 @@
 # @gaze-ui/react
 
+## 0.2.0
+
+### Minor Changes
+
+- [`773a3e4`](https://github.com/studio-drishti/gaze/commit/773a3e474a1edc96177fb0a5f38d4dcddd15b9b9) Thanks [@jnlsn](https://github.com/jnlsn)! - Added switcher alignment prop.
+
 ## 0.1.1
 
 ### Patch Changes

@@ -17,3 +17,15 @@
 .limit2 > :nth-child(n + 3) ~ * {
   flex-basis: 100%;
 }
+
+.alignStart {
+  align-items: flex-start;
+}
+
+.alignCenter {
+  align-items: center;
+}
+
+.alignEnd {
+  align-items: flex-end;
+}

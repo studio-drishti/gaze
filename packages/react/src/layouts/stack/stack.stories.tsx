@@ -23,11 +23,11 @@ export const Nested = (): JSX.Element => (
     <Box background="var(--color-purple-500)" padding="var(--size-space-40)" />
     <Stack space="var(--size-space-100)">
       <Box
-        background="var(--color-purple-500)"
+        background="var(--color-purple-900)"
         padding="var(--size-space-40)"
       />
       <Box
-        background="var(--color-purple-500)"
+        background="var(--color-purple-900)"
         padding="var(--size-space-40)"
       />
     </Stack>

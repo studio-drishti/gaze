@@ -13,12 +13,8 @@ export interface StackProps {
 export const Stack = React.forwardRef<HTMLDivElement, StackProps>(
   ({ children, space, className }, ref): JSX.Element => {
     return (
-      <div
-        className={cx({ stack: true }, className)}
-        ref={ref}
-        style={{ ["--stack-space"]: space }}
-      >
-        {children}
+      <div className={cx("stack", className)} ref={ref}>
+        <div style={{ ["--stack-space"]: space }}>{children}</div>
       </div>
     );
   }

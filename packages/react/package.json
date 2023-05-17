@@ -2,7 +2,7 @@
   "name": "@gaze-ui/react",
   "description": "Gaze design system React components.",
   "homepage": "https://github.com/studio-drishti/gaze#readme",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "publishConfig": {
     "access": "public"
   },

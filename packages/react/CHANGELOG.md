@@ -1,5 +1,15 @@
 # @gaze-ui/react
 
+## 0.3.0
+
+### Minor Changes
+
+- [`98ac9b8`](https://github.com/studio-drishti/gaze/commit/98ac9b87d01e9da6c1761218b6464466889a07ed) Thanks [@jnlsn](https://github.com/jnlsn)! - added separator component
+
+### Patch Changes
+
+- [`6ab89bb`](https://github.com/studio-drishti/gaze/commit/6ab89bbfe5c50cca8ddd4c96f8cb968f3caf7be7) Thanks [@jnlsn](https://github.com/jnlsn)! - fixed stack spacing
+
 ## 0.2.0
 
 ### Minor Changes

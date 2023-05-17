@@ -1,0 +1,23 @@
+.separator {
+  border-width: 0;
+  height: 0;
+  margin: 0;
+  border-top-width: var(--sep-thickness, var(--size-border-px));
+  border-top-color: var(--sep-color, var(--text-color, var(--color-black)));
+}
+
+[data-invert="true"] .separator {
+  border-top-color: var(--sep-color, var(--color-white));
+}
+
+.solid {
+  border-style: solid;
+}
+
+.dotted {
+  border-style: dotted;
+}
+
+.dashed {
+  border-style: dashed;
+}

@@ -1,5 +1,11 @@
 # @gaze-ui/react
 
+## 0.3.1
+
+### Patch Changes
+
+- [`357a333`](https://github.com/studio-drishti/gaze/commit/357a3336bfb6b83e151b9cc9ac2e82b261712310) Thanks [@jnlsn](https://github.com/jnlsn)! - allow html props
+
 ## 0.3.0
 
 ### Minor Changes

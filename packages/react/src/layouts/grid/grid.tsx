@@ -4,7 +4,7 @@ import styles from "./grid.module.css";
 
 const cx = classNames.bind(styles);
 
-export interface GridProps {
+export interface GridProps extends React.HTMLProps<HTMLDivElement> {
   children: React.ReactNode;
   space?: `var(--${string})`;
   minimum: string;
@@ -13,11 +13,12 @@ export interface GridProps {
 
 export const Grid = React.forwardRef<HTMLDivElement, GridProps>(
   (
-    { children, space = "var(--size-space-0)", minimum, className },
+    { children, space = "var(--size-space-0)", minimum, className, ...props },
     ref
   ): JSX.Element => {
     return (
       <div
+        {...props}
         className={cx("grid", className)}
         ref={ref}
         style={{ ["--grid-space"]: space, ["--minimum"]: minimum }}

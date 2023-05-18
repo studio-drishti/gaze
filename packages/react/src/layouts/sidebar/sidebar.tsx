@@ -4,7 +4,7 @@ import styles from "./sidebar.module.css";
 
 const cx = classNames.bind(styles);
 
-export interface SidebarProps {
+export interface SidebarProps extends React.HTMLProps<HTMLDivElement> {
   side?: "left" | "right";
   sideWidth?: string;
   space?: string;
@@ -14,7 +14,10 @@ export interface SidebarProps {
 }
 
 export const Sidebar = React.forwardRef<HTMLDivElement, SidebarProps>(
-  ({ children, side = "left", sideWidth, space, minimum, reverse }, ref) => {
+  (
+    { children, side = "left", sideWidth, space, minimum, reverse, ...props },
+    ref
+  ) => {
     const cssProperties: React.CSSProperties = {};
 
     if (sideWidth) {
@@ -31,6 +34,7 @@ export const Sidebar = React.forwardRef<HTMLDivElement, SidebarProps>(
 
     return (
       <div
+        {...props}
         className={cx({ sidebar: true, reverse: Boolean(reverse) }, side)}
         ref={ref}
         style={cssProperties}

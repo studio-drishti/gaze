@@ -4,7 +4,7 @@ import styles from "./box.module.css";
 
 const cx = classNames.bind(styles);
 
-export interface BoxProps {
+export interface BoxProps extends React.HTMLProps<HTMLElement> {
   as?: "article" | "div" | "footer" | "header" | "main" | "section";
   children?: React.ReactNode;
   className?: string;
@@ -28,6 +28,7 @@ export const Box = React.forwardRef<HTMLDivElement, BoxProps>(
       background,
       borderRadius,
       invert = false,
+      ...props
     },
     ref
   ) => {
@@ -54,6 +55,7 @@ export const Box = React.forwardRef<HTMLDivElement, BoxProps>(
 
     return (
       <Component
+        {...props}
         className={cx({ box: true }, className)}
         data-invert={invert}
         ref={ref}

@@ -4,7 +4,8 @@ import styles from "./icon.module.css";
 
 const cx = classNames.bind(styles);
 
-export interface IconProps {
+export interface IconProps
+  extends Omit<React.HTMLProps<HTMLSpanElement>, "size"> {
   label?: string;
   space?: string;
   className?: string;
@@ -13,7 +14,7 @@ export interface IconProps {
 }
 
 export const Icon = React.forwardRef<HTMLSpanElement, IconProps>(
-  ({ space, size, label, children, className }, ref) => {
+  ({ space, size, label, children, className, ...props }, ref) => {
     const cssProperties: React.CSSProperties = {};
 
     if (space) {
@@ -26,6 +27,7 @@ export const Icon = React.forwardRef<HTMLSpanElement, IconProps>(
 
     return (
       <span
+        {...props}
         aria-label={label}
         className={cx(
           { icon: true, withText: React.Children.count(children) > 1 },

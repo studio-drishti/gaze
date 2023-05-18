@@ -4,7 +4,7 @@ import styles from "./frame.module.css";
 
 const cx = classNames.bind(styles);
 
-export interface FrameProps {
+export interface FrameProps extends React.HTMLProps<HTMLDivElement> {
   children: React.ReactNode;
   aspectRatio: number;
   borderRadius: string;
@@ -12,7 +12,10 @@ export interface FrameProps {
 }
 
 export const Frame = React.forwardRef<HTMLDivElement, FrameProps>(
-  ({ children, aspectRatio, borderRadius, className }, ref): JSX.Element => {
+  (
+    { children, aspectRatio, borderRadius, className, ...props },
+    ref
+  ): JSX.Element => {
     const cssProperties: React.CSSProperties = {
       ["--frame-ratio"]: aspectRatio,
     };
@@ -22,7 +25,12 @@ export const Frame = React.forwardRef<HTMLDivElement, FrameProps>(
     }
 
     return (
-      <div className={cx("frame", className)} ref={ref} style={cssProperties}>
+      <div
+        {...props}
+        className={cx("frame", className)}
+        ref={ref}
+        style={cssProperties}
+      >
         {children}
       </div>
     );

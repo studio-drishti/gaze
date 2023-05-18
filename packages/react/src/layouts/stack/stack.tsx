@@ -4,16 +4,16 @@ import styles from "./stack.module.css";
 
 const cx = classNames.bind(styles);
 
-export interface StackProps {
+export interface StackProps extends React.HTMLProps<HTMLDivElement> {
   children: React.ReactNode;
   space: string;
   className?: string;
 }
 
 export const Stack = React.forwardRef<HTMLDivElement, StackProps>(
-  ({ children, space, className }, ref): JSX.Element => {
+  ({ children, space, className, ...props }, ref): JSX.Element => {
     return (
-      <div className={cx("stack", className)} ref={ref}>
+      <div {...props} className={cx("stack", className)} ref={ref}>
         <div style={{ ["--stack-space"]: space }}>{children}</div>
       </div>
     );

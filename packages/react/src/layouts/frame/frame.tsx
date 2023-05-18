@@ -7,7 +7,7 @@ const cx = classNames.bind(styles);
 export interface FrameProps extends React.HTMLProps<HTMLDivElement> {
   children: React.ReactNode;
   aspectRatio: number;
-  borderRadius: string;
+  borderRadius?: string;
   className?: string;
 }
 

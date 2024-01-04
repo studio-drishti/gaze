@@ -4,7 +4,7 @@ import styles from "./center.module.css";
 
 const cx = classNames.bind(styles);
 
-export interface CenterProps extends React.HTMLProps<HTMLDivElement> {
+export interface CenterProps extends React.ComponentPropsWithRef<"div"> {
   children: React.ReactNode;
   maxWidth?: string;
   gutter?: `var(--${string})`;

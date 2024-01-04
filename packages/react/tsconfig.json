@@ -1,5 +1,9 @@
 {
   "extends": "@gaze-ui/tsconfig/react-library.json",
-  "include": ["src", "types.d.ts"],
+  "include": [
+    "src",
+    "types.d.ts",
+    "../../apps/workshop/src/components/anchor.stories.tsx"
+  ],
   "exclude": ["dist", "build", "node_modules"]
 }

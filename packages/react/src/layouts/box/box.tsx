@@ -4,7 +4,7 @@ import styles from "./box.module.css";
 
 const cx = classNames.bind(styles);
 
-export interface BoxProps extends React.HTMLProps<HTMLElement> {
+export interface BoxProps extends React.ComponentPropsWithRef<"div"> {
   as?: "article" | "div" | "footer" | "header" | "main" | "section";
   children?: React.ReactNode;
   className?: string;
@@ -16,55 +16,51 @@ export interface BoxProps extends React.HTMLProps<HTMLElement> {
   invert?: boolean;
 }
 
-export const Box = React.forwardRef<HTMLDivElement, BoxProps>(
-  (
-    {
-      as,
-      children,
-      className,
-      padding,
-      paddingX,
-      paddingY,
-      background,
-      borderRadius,
-      invert = false,
-      ...props
-    },
-    ref
-  ) => {
-    const Component = as || "div";
-    const boxProperties: React.CSSProperties = {};
-    const py = paddingY || padding;
-    const px = paddingX || padding;
+export const Box = React.forwardRef<HTMLDivElement, BoxProps>(function Box(
+  {
+    as,
+    children,
+    className,
+    padding,
+    paddingX,
+    paddingY,
+    background,
+    borderRadius,
+    invert = false,
+    ...props
+  },
+  ref
+) {
+  const Component = as || "div";
+  const boxProperties: React.CSSProperties = {};
+  const py = paddingY || padding;
+  const px = paddingX || padding;
 
-    if (py) {
-      boxProperties["--py"] = py;
-    }
-
-    if (px) {
-      boxProperties["--px"] = px;
-    }
-
-    if (background) {
-      boxProperties["--background"] = background;
-    }
-
-    if (borderRadius) {
-      boxProperties["--radius"] = borderRadius;
-    }
-
-    return (
-      <Component
-        {...props}
-        className={cx({ box: true }, className)}
-        data-invert={invert}
-        ref={ref}
-        style={boxProperties}
-      >
-        {children}
-      </Component>
-    );
+  if (py) {
+    boxProperties["--py"] = py;
   }
-);
 
-Box.displayName = "Box";
+  if (px) {
+    boxProperties["--px"] = px;
+  }
+
+  if (background) {
+    boxProperties["--background"] = background;
+  }
+
+  if (borderRadius) {
+    boxProperties["--radius"] = borderRadius;
+  }
+
+  return (
+    <Component
+      {...props}
+      className={cx({ box: true }, className)}
+      data-invert={invert}
+      ref={ref}
+      style={boxProperties}
+    >
+      {children}
+    </Component>
+  );
+});

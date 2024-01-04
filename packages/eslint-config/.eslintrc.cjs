@@ -81,31 +81,24 @@ module.exports = {
         ],
       },
       extends: [
+        "plugin:@typescript-eslint/eslint-recommended",
         "plugin:@typescript-eslint/recommended",
+        "plugin:@typescript-eslint/stylistic",
         "plugin:import/typescript",
+        "plugin:jsdoc/recommended-typescript",
       ],
       rules: {
-        "@typescript-eslint/no-explicit-any": ["error"],
         "@typescript-eslint/no-unused-vars": [
           "error",
           { argsIgnorePattern: "^_", varsIgnorePattern: "^_" },
         ],
-        "@typescript-eslint/explicit-module-boundary-types": ["error"],
-        "@typescript-eslint/no-extra-parens": ["error", "functions"],
-        "@typescript-eslint/sort-type-union-intersection-members": ["error"],
-        "@typescript-eslint/restrict-plus-operands": ["error"],
-        "@typescript-eslint/no-unnecessary-condition": ["error"],
-        // JSDoc types are redundant with typescript
-        "jsdoc/no-types": ["error", { contexts: ["any"] }],
-        "jsdoc/require-returns-type": "off",
-        "jsdoc/require-param-type": "off",
-        "jsdoc/require-property-type": "off",
       },
     },
     {
       files: ["*.{js,cjs}"],
       rules: {
         "unicorn/prefer-module": "off",
+        "import/no-default-export": "off",
       },
     },
     {

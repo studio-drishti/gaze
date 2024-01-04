@@ -26,8 +26,7 @@
         "typescript.tsdk": "node_modules/typescript/lib",
         "editor.formatOnSave": true,
         "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "eslint.packageManager": "yarn",
-        "npm.packageManager": "yarn",
+        "npm.packageManager": "npm",
         "editor.codeActionsOnSave": {
           "source.fixAll.eslint": true
         },

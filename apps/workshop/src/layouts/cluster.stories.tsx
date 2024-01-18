@@ -1,12 +1,17 @@
 import * as React from "react";
-import type { ComponentMeta } from "@storybook/react";
-import { Box } from "../box";
-import { Cluster } from "./cluster";
+import type { Meta } from "@storybook/react";
+import { Box, Cluster } from "@gaze-ui/react";
 
-export default {
-  component: Cluster,
+const meta: Meta<typeof Cluster> = {
   title: "Layouts/Cluster",
-} as ComponentMeta<typeof Cluster>;
+  component: Cluster,
+  parameters: {
+    layout: "centered",
+  },
+  tags: ["autodocs"],
+};
+
+export default meta;
 
 export const Simple = (): JSX.Element => (
   <Cluster space="var(--size-space-20)">

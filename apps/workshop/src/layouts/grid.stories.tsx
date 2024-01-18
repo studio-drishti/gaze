@@ -1,12 +1,14 @@
 import * as React from "react";
-import type { ComponentMeta } from "@storybook/react";
-import { Box } from "../box";
-import { Grid } from "./grid";
+import type { Meta } from "@storybook/react";
+import { Box, Grid } from "@gaze-ui/react";
 
-export default {
-  component: Grid,
+const meta: Meta<typeof Grid> = {
   title: "Layouts/Grid",
-} as ComponentMeta<typeof Grid>;
+  component: Grid,
+  tags: ["autodocs"],
+};
+
+export default meta;
 
 export const Simple = (): JSX.Element => (
   <Grid minimum="15rem" space="var(--size-space-40)">

@@ -1,12 +1,14 @@
 import * as React from "react";
-import type { ComponentMeta } from "@storybook/react";
-import { Box } from "../box";
-import { Frame } from "./frame";
+import type { Meta } from "@storybook/react";
+import { Box, Frame } from "@gaze-ui/react";
 
-export default {
-  component: Frame,
+const meta: Meta<typeof Frame> = {
   title: "Layouts/Frame",
-} as ComponentMeta<typeof Frame>;
+  component: Frame,
+  tags: ["autodocs"],
+};
+
+export default meta;
 
 export const SixteenByNine = (): JSX.Element => (
   <Frame aspectRatio={16 / 9}>

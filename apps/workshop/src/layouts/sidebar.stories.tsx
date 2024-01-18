@@ -1,13 +1,13 @@
 import * as React from "react";
-import type { ComponentMeta } from "@storybook/react";
-import { Box } from "../box";
-import { Center } from "../center";
-import { Sidebar } from "./sidebar";
+import type { Meta } from "@storybook/react";
+import { Box, Center, Sidebar } from "@gaze-ui/react";
 
-export default {
+const meta: Meta<typeof Sidebar> = {
   component: Sidebar,
   title: "Layouts/Sidebar",
-} as ComponentMeta<typeof Sidebar>;
+};
+
+export default meta;
 
 export const Left = (): JSX.Element => (
   <Center maxWidth="60rem">

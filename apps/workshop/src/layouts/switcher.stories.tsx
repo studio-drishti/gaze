@@ -1,12 +1,14 @@
 import * as React from "react";
-import type { ComponentMeta } from "@storybook/react";
-import { Box } from "../box";
-import { Switcher } from "./switcher";
+import type { Meta } from "@storybook/react";
+import { Box, Switcher } from "@gaze-ui/react";
 
-export default {
-  component: Switcher,
+const meta: Meta<typeof Switcher> = {
   title: "Layouts/Switcher",
-} as ComponentMeta<typeof Switcher>;
+  component: Switcher,
+  tags: ["autodocs"],
+};
+
+export default meta;
 
 export const Three = (): JSX.Element => (
   <Switcher limit={3} space="var(--size-space-40)" threshold="40rem">
@@ -18,10 +20,10 @@ export const Three = (): JSX.Element => (
 
 export const Align = (): JSX.Element => (
   <Switcher
+    align="center"
     limit={3}
     space="var(--size-space-40)"
     threshold="40rem"
-    align="center"
   >
     <Box background="var(--color-purple-500)" padding="var(--size-space-30)" />
     <Box background="var(--color-purple-500)" padding="var(--size-space-50)" />

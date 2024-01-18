@@ -1,13 +1,18 @@
 import * as React from "react";
-import type { ComponentMeta } from "@storybook/react";
+import type { Meta } from "@storybook/react";
 import { IconSwords } from "@tabler/icons-react";
-import { Text } from "../../components/text";
-import { Icon } from "./icon";
+import { Text, Icon } from "@gaze-ui/react";
 
-export default {
-  component: Icon,
+const meta: Meta<typeof Icon> = {
   title: "Layouts/Icon",
-} as ComponentMeta<typeof Icon>;
+  component: Icon,
+  parameters: {
+    layout: "centered",
+  },
+  tags: ["autodocs"],
+};
+
+export default meta;
 
 export const IconOnly = (): JSX.Element => (
   <Text fontSize="var(--size-font-4xl)">

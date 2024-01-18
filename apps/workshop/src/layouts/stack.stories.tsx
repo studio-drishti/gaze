@@ -1,12 +1,14 @@
 import * as React from "react";
-import type { ComponentMeta } from "@storybook/react";
-import { Box } from "../box";
-import { Stack } from "./stack";
+import type { Meta } from "@storybook/react";
+import { Box, Stack } from "@gaze-ui/react";
 
-export default {
-  component: Stack,
+const meta: Meta<typeof Stack> = {
   title: "Layouts/Stack",
-} as ComponentMeta<typeof Stack>;
+  component: Stack,
+  tags: ["autodocs"],
+};
+
+export default meta;
 
 export const Simple = (): JSX.Element => (
   <Stack space="var(--size-space-40)">

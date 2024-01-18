@@ -20,7 +20,8 @@
         "esbenp.prettier-vscode",
         "EditorConfig.EditorConfig",
         "streetsidesoftware.code-spell-checker",
-        "vunguyentuan.vscode-css-variables"
+        "vunguyentuan.vscode-css-variables",
+        "stylelint.vscode-stylelint"
       ],
       "settings": {
         "typescript.tsdk": "node_modules/typescript/lib",
@@ -28,7 +29,8 @@
         "editor.defaultFormatter": "esbenp.prettier-vscode",
         "npm.packageManager": "npm",
         "editor.codeActionsOnSave": {
-          "source.fixAll.eslint": true
+          "source.fixAll.eslint": "explicit",
+          "source.fixAll.stylelint": "explicit"
         },
         "cssVariables.lookupFiles": [
           "**/*.css",

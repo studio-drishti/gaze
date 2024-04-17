@@ -22,7 +22,7 @@
   },
   "license": "MIT",
   "scripts": {
-    "lint": "TIMING=1 eslint \"**/*.ts*\""
+    "lint": "TIMING=1 eslint \"**/*.{ts,tsx}*\""
   },
   "peerDependencies": {
     "classnames": "2.x",
@@ -34,12 +34,12 @@
     "@gaze-ui/stylelint-config": "*",
     "@gaze-ui/tsconfig": "*",
     "@types/css-modules": "1.0.5",
-    "@types/react": "18.2.48",
-    "@types/react-dom": "18.2.18",
+    "@types/react": "18.2.79",
+    "@types/react-dom": "18.2.25",
     "classnames": "2.5.1",
-    "eslint": "8.56.0",
+    "eslint": "9.0.0",
     "react": "18.2.0",
-    "stylelint": "16.1.0",
-    "typescript": "5.3.3"
+    "stylelint": "16.3.1",
+    "typescript": "5.4.5"
   }
 }

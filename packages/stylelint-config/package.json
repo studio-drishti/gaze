@@ -6,6 +6,6 @@
     "stylelint-config-rational-order": "0.1.2",
     "stylelint-config-standard": "36.0.0",
     "stylelint-order": "6.0.4",
-    "stylelint-plugin-defensive-css": "1.0.1"
+    "stylelint-plugin-defensive-css": "1.0.3"
   }
 }

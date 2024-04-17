@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "lint": "TIMING=1 eslint \"**/*.{ts,tsx}*\"",
     "preview": "vite preview",
     "dev": "storybook dev -p 6006",
     "build-storybook": "storybook build"
@@ -12,31 +12,31 @@
   "dependencies": {
     "@gaze-ui/react": "*",
     "@gaze-ui/tokens": "*",
-    "@tabler/icons-react": "2.46.0",
+    "@tabler/icons-react": "3.2.0",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
   "devDependencies": {
     "@gaze-ui/eslint-config": "*",
     "@gaze-ui/tsconfig": "*",
-    "@storybook/addon-essentials": "7.6.10",
-    "@storybook/addon-interactions": "7.6.10",
-    "@storybook/addon-links": "7.6.10",
-    "@storybook/addon-onboarding": "1.0.10",
-    "@storybook/blocks": "7.6.10",
-    "@storybook/react": "7.6.10",
-    "@storybook/react-vite": "7.6.10",
-    "@storybook/test": "7.6.10",
-    "@types/react": "18.2.48",
-    "@types/react-dom": "18.2.18",
-    "@typescript-eslint/eslint-plugin": "6.19.0",
-    "@typescript-eslint/parser": "6.19.0",
+    "@storybook/addon-essentials": "^8.0.8",
+    "@storybook/addon-interactions": "^8.0.8",
+    "@storybook/addon-links": "^8.0.8",
+    "@storybook/addon-onboarding": "^8.0.8",
+    "@storybook/blocks": "^8.0.8",
+    "@storybook/react": "^8.0.8",
+    "@storybook/react-vite": "^8.0.8",
+    "@storybook/test": "^8.0.8",
+    "@types/react": "18.2.79",
+    "@types/react-dom": "18.2.25",
+    "@typescript-eslint/eslint-plugin": "7.7.0",
+    "@typescript-eslint/parser": "7.7.0",
     "@vitejs/plugin-react": "4.2.1",
-    "eslint": "8.56.0",
+    "eslint": "9.0.0",
     "eslint-plugin-react-hooks": "4.6.0",
-    "eslint-plugin-react-refresh": "0.4.5",
-    "storybook": "7.6.10",
-    "typescript": "5.3.3",
-    "vite": "5.0.11"
+    "eslint-plugin-react-refresh": "0.4.6",
+    "storybook": "^8.0.8",
+    "typescript": "5.4.5",
+    "vite": "5.2.9"
   }
 }

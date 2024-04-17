@@ -9,5 +9,5 @@ npm run dev
 ## Upgrades
 
 ```bash
-npx npm-check-updates --workspaces --interactive
+npx npm-check-updates --workspaces --root --interactive
 ```

@@ -1,42 +1,51 @@
 import classNames from "classnames/bind";
 import * as React from "react";
+
+import { CSSProperties } from "../../types";
+
 import styles from "./center.module.css";
 
 const cx = classNames.bind(styles);
 
 export interface CenterProps extends React.ComponentPropsWithRef<"div"> {
-  children: React.ReactNode;
+  children: NonNullable<React.ReactNode>;
   maxWidth?: string;
-  gutter?: `var(--${string})`;
+  gutter?: string;
   textCenter?: boolean;
   intrinsicCenter?: boolean;
-  className?: string;
 }
 
 export const Center = React.forwardRef<HTMLDivElement, CenterProps>(
-  (
+  function Center(
     {
       children,
-      maxWidth = "80rem",
-      gutter = "var(--size-space-40)",
+      maxWidth = "100%",
+      gutter = "0",
       textCenter = false,
       intrinsicCenter = false,
       className,
       ...props
     },
-    ref
-  ): JSX.Element => {
+    ref,
+  ) {
+    const centerProperties: CSSProperties = {
+      ["--width"]: maxWidth,
+      ["--gutter"]: gutter,
+    };
+
     return (
       <div
         {...props}
-        className={cx({ center: true, textCenter, intrinsicCenter }, className)}
+        className={cx(
+          "center",
+          { text: textCenter, intrinsic: intrinsicCenter },
+          className,
+        )}
         ref={ref}
-        style={{ "--max-width": maxWidth, "--gutter": gutter }}
+        style={centerProperties}
       >
         {children}
       </div>
     );
-  }
+  },
 );
-
-Center.displayName = "Center";

@@ -10,7 +10,7 @@ const meta: Meta<typeof Frame> = {
 
 export default meta;
 
-export const SixteenByNine = (): JSX.Element => (
+export const SixteenByNine = () => (
   <Frame aspectRatio={16 / 9}>
     <Box background="var(--color-purple-500)" padding="var(--size-space-40)" />
   </Frame>

@@ -1,14 +1,15 @@
 .frame {
-  aspect-ratio: var(--frame-ratio);
-  overflow: hidden;
   display: flex;
-  justify-content: center;
+  flex-wrap: nowrap;
   align-items: center;
-  border-radius: var(--frame-radius, 0);
+  justify-content: center;
+  overflow: hidden;
+  aspect-ratio: var(--ratio);
+  background: var(--bg);
 }
 
 .frame > * {
   inline-size: 100%;
   block-size: 100%;
-  object-fit: cover;
+  object-fit: var(--fit);
 }

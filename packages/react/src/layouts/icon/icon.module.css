@@ -1,26 +1,27 @@
 .icon > svg {
-  height: 0.75em;
-  height: 1cap;
+  display: inline-block;
   width: 0.75em;
   width: 1cap;
-  display: inline-block;
+  height: 0.75em;
+  height: 1cap;
 }
 
 .icon {
-  align-items: center;
   display: inline-flex;
+  flex-wrap: nowrap;
+  align-items: center;
   color: var(--color, var(--text-color));
-  font-size: var(--icon-size, inherit);
-  font-family: var(--body-font, var(--font-sans));
   font-weight: var(--body-weight, var(--weight-normal));
+  font-size: var(--size);
+  font-family: var(--body-font, var(--font-sans));
 }
 
-.withText {
+.with-text {
   align-items: baseline;
 }
 
-.withText > svg {
-  margin-inline-end: var(--icon-space, 0.5em);
+.with-text > svg {
+  margin-inline-end: var(--space);
 }
 
 [data-invert="true"] .icon {

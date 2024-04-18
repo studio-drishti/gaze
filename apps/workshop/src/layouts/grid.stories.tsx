@@ -10,7 +10,7 @@ const meta: Meta<typeof Grid> = {
 
 export default meta;
 
-export const Simple = (): JSX.Element => (
+export const Simple = () => (
   <Grid minimum="15rem" space="var(--size-space-40)">
     <Box background="var(--color-purple-500)" padding="var(--size-space-100)" />
     <Box background="var(--color-purple-500)" padding="var(--size-space-100)" />

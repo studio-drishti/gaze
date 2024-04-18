@@ -9,7 +9,7 @@ const meta: Meta<typeof Sidebar> = {
 
 export default meta;
 
-export const Left = (): JSX.Element => (
+export const Left = () => (
   <Center maxWidth="60rem">
     <Sidebar sideWidth="20rem" space="var(--size-space-10)">
       <Box

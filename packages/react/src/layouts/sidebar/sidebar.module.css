@@ -1,12 +1,13 @@
 .sidebar {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--sidebar-space, 0);
+  gap: var(--space);
+  align-items: var(--align);
 }
 
 .left > :first-child,
 .right > :last-child {
-  flex-basis: var(--side-width, auto);
+  flex-basis: var(--width);
   flex-grow: 1;
 }
 
@@ -14,7 +15,7 @@
 .right > :first-child {
   flex-basis: 0;
   flex-grow: 999;
-  min-inline-size: var(--minimum, 50%);
+  min-inline-size: var(--min);
 }
 
 .reverse {

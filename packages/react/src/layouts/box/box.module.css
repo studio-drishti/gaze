@@ -1,5 +1,12 @@
 .box {
-  padding: var(--py, 0) var(--px, 0);
-  background: var(--background, var(--color-white));
-  border-radius: var(--radius, 0);
+  padding: var(--py) var(--px);
+  background: var(--bg);
+  border-radius: var(--rad);
+}
+
+@media (prefers-contrast: more) {
+  .box {
+    outline: 0.0625rem solid var(--color-black);
+    outline-offset: -0.0625rem;
+  }
 }

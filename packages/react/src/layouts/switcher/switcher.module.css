@@ -1,12 +1,13 @@
 .switcher {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--switcher-space);
+  gap: var(--space);
+  align-items: var(--align);
 }
 
 .switcher > * {
-  flex-grow: 1;
   flex-basis: calc((var(--threshold) - 100%) * 999);
+  flex-grow: 1;
 }
 
 .limit4 > :nth-last-child(n + 5),
@@ -16,16 +17,4 @@
 .limit2 > :nth-child(n + 3),
 .limit2 > :nth-child(n + 3) ~ * {
   flex-basis: 100%;
-}
-
-.alignStart {
-  align-items: flex-start;
-}
-
-.alignCenter {
-  align-items: center;
-}
-
-.alignEnd {
-  align-items: flex-end;
 }

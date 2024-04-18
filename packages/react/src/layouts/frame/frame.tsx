@@ -1,28 +1,36 @@
 import * as React from "react";
 import classNames from "classnames/bind";
+
+import { CSSProperties } from "../../types";
+
 import styles from "./frame.module.css";
 
 const cx = classNames.bind(styles);
 
-export interface FrameProps extends React.HTMLProps<HTMLDivElement> {
+export interface FrameProps extends React.ComponentPropsWithRef<"div"> {
   children: React.ReactNode;
   aspectRatio: number;
-  borderRadius?: string;
-  className?: string;
+  fit?: "cover" | "contain";
+  background?: string;
 }
 
 export const Frame = React.forwardRef<HTMLDivElement, FrameProps>(
-  (
-    { children, aspectRatio, borderRadius, className, ...props },
-    ref
-  ): JSX.Element => {
-    const cssProperties: React.CSSProperties = {
-      ["--frame-ratio"]: aspectRatio,
+  function Frame(
+    {
+      children,
+      aspectRatio,
+      fit = "cover",
+      background = "transparent",
+      className,
+      ...props
+    },
+    ref,
+  ) {
+    const cssProperties: CSSProperties = {
+      ["--ratio"]: aspectRatio,
+      ["--bg"]: background,
+      ["--fit"]: fit,
     };
-
-    if (borderRadius) {
-      cssProperties["--frame-radius"] = borderRadius;
-    }
 
     return (
       <div
@@ -34,7 +42,5 @@ export const Frame = React.forwardRef<HTMLDivElement, FrameProps>(
         {children}
       </div>
     );
-  }
+  },
 );
-
-Frame.displayName = "Frame";

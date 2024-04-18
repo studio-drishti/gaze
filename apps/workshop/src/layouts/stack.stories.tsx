@@ -10,7 +10,7 @@ const meta: Meta<typeof Stack> = {
 
 export default meta;
 
-export const Simple = (): JSX.Element => (
+export const Simple = () => (
   <Stack space="var(--size-space-40)">
     <Box background="var(--color-purple-500)" padding="var(--size-space-40)" />
     <Box background="var(--color-purple-500)" padding="var(--size-space-40)" />
@@ -19,7 +19,7 @@ export const Simple = (): JSX.Element => (
   </Stack>
 );
 
-export const Nested = (): JSX.Element => (
+export const Nested = () => (
   <Stack space="var(--size-space-40)">
     <Box background="var(--color-purple-500)" padding="var(--size-space-40)" />
     <Box background="var(--color-purple-500)" padding="var(--size-space-40)" />

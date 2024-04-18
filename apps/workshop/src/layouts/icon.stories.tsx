@@ -14,7 +14,7 @@ const meta: Meta<typeof Icon> = {
 
 export default meta;
 
-export const IconOnly = (): JSX.Element => (
+export const IconOnly = () => (
   <Text fontSize="var(--size-font-4xl)">
     <Icon label="I challenge you to a duel">
       <IconSwords />
@@ -22,7 +22,7 @@ export const IconOnly = (): JSX.Element => (
   </Text>
 );
 
-export const WithText = (): JSX.Element => (
+export const WithText = () => (
   <Text fontSize="var(--size-font-xl)">
     <Icon>
       <IconSwords /> I challenge you to a duel

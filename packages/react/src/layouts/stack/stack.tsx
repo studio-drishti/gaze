@@ -1,23 +1,28 @@
 import * as React from "react";
 import classNames from "classnames/bind";
+
+import { CSSProperties } from "../../types";
+
 import styles from "./stack.module.css";
 
 const cx = classNames.bind(styles);
 
-export interface StackProps extends React.HTMLProps<HTMLDivElement> {
-  children: React.ReactNode;
+export interface StackProps extends React.ComponentPropsWithRef<"div"> {
+  children: NonNullable<React.ReactNode>;
   space: string;
-  className?: string;
 }
 
+/** A Stack provides physical and conceptual separation from elements in a flow. */
 export const Stack = React.forwardRef<HTMLDivElement, StackProps>(
-  ({ children, space, className, ...props }, ref): JSX.Element => {
+  function Stack({ children, space, className, ...props }, ref) {
+    const stackProperties: CSSProperties = {
+      ["--stack-space"]: space,
+    };
+
     return (
       <div {...props} className={cx("stack", className)} ref={ref}>
-        <div style={{ ["--stack-space"]: space }}>{children}</div>
+        <div style={stackProperties}>{children}</div>
       </div>
     );
-  }
+  },
 );
-
-Stack.displayName = "Stack";

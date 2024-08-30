@@ -28,6 +28,7 @@
         "editor.formatOnSave": true,
         "editor.defaultFormatter": "esbenp.prettier-vscode",
         "npm.packageManager": "npm",
+        "eslint.useFlatConfig": true,
         "editor.codeActionsOnSave": {
           "source.fixAll.eslint": "explicit",
           "source.fixAll.stylelint": "explicit"

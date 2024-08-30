@@ -1,14 +1,15 @@
 {
   "version": "0.2",
   "language": "en",
-  "words": ["drishti"],
+  "words": ["drishti", "mjsx", "mtsx"],
   "ignoreWords": [
     "eamodio",
     "dbaeumer",
     "esbenp",
     "sonarjs",
     "nextjs",
-    "tabler"
+    "tabler",
+    "tseslint"
   ],
   "flagWords": ["hte"],
   "allowCompoundWords": true,

@@ -47,7 +47,7 @@
   "portsAttributes": {
     "6006": {
       "label": "Storybook",
-      "onAutoForward": "silent"
+      "onAutoForward": "openBrowserOnce"
     }
   },
 

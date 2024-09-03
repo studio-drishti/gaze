@@ -2,6 +2,14 @@
   "name": "@gaze-ui/stylelint-config",
   "version": "0.0.0",
   "main": "index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:studio-drishti/gaze.git",
+    "directory": "packages/stylelint-config"
+  },
   "dependencies": {
     "stylelint-config-rational-order": "0.1.2",
     "stylelint-config-standard": "36.0.1",

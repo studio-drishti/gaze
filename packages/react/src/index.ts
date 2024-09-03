@@ -1,5 +1,6 @@
 export * from "./components/anchor";
 export * from "./components/heading";
+export * from "./components/link-overlay";
 export * from "./components/separator";
 export * from "./components/text";
 export * from "./layouts/box";

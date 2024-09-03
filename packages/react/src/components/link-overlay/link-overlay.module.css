@@ -1,0 +1,34 @@
+.link-box {
+  position: relative;
+  border-radius: var(--size-radius-sm);
+
+  & a[href]:not(.link-overlay) {
+    position: relative;
+    z-index: 1;
+  }
+
+  &:has(.link-overlay:focus-visible) {
+    outline: var(--outline-color, var(--color-cyan-500)) solid
+      var(--size-space-px);
+    outline-offset: 0.25em;
+  }
+}
+
+.link-overlay {
+  position: static;
+  color: unset;
+  text-decoration: unset;
+  outline: none;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    content: "";
+  }
+}

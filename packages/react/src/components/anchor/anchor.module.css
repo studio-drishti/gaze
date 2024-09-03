@@ -1,6 +1,7 @@
 .anchor {
-  text-decoration: underline;
   color: inherit;
+  text-decoration: underline;
+  border-radius: var(--size-radius-sm);
   cursor: pointer;
 }
 
@@ -9,7 +10,7 @@
 }
 
 .anchor:focus {
-  outline-color: var(--outline-color, var(--color-cyan-500));
+  outline: var(--size-space-px) solid
+    var(--outline-color, var(--color-cyan-500));
   outline-offset: 0.25em;
-  --moz-outline-radius: var(--size-radius-base);
 }

@@ -3,7 +3,7 @@
   "description": "Shareable ESlint config for projects using Gaze design system.",
   "homepage": "https://github.com/studio-drishti/gaze#readme",
   "license": "MIT",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "type": "module",
   "publishConfig": {
     "access": "public"

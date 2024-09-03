@@ -2,7 +2,7 @@
   "name": "@gaze-ui/tsconfig",
   "description": "Shareable TypeScript config for Gaze design system projects.",
   "homepage": "https://github.com/studio-drishti/gaze#readme",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "publishConfig": {
     "access": "public"
   },

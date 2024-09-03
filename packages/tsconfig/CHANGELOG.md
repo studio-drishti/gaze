@@ -1,5 +1,11 @@
 # @gaze-ui/tsconfig
 
+## 0.2.1
+
+### Patch Changes
+
+- [`1ec8cc6`](https://github.com/studio-drishti/gaze/commit/1ec8cc6f2ae7ae060f903ea6273b99406a59a504) Thanks [@jnlsn](https://github.com/jnlsn)! - Fix package exports.
+
 ## 0.2.0
 
 ### Minor Changes

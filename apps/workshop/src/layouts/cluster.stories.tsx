@@ -1,14 +1,15 @@
-import * as React from "react";
 import type { Meta } from "@storybook/react";
+
 import { Box, Cluster } from "@gaze-ui/react";
+import * as React from "react";
 
 const meta: Meta<typeof Cluster> = {
-  title: "Layouts/Cluster",
   component: Cluster,
   parameters: {
     layout: "centered",
   },
   tags: ["autodocs"],
+  title: "Layouts/Cluster",
 };
 
 export default meta;

@@ -1,44 +1,43 @@
 import classNames from "classnames/bind";
 import * as React from "react";
 
-import { CSSProperties } from "../../types";
-
+import { CSSProperties } from "../../types.js";
 import styles from "./box.module.css";
 
 const cx = classNames.bind(styles);
 
 export interface BoxProps extends React.ComponentPropsWithRef<"div"> {
   as?: "article" | "div" | "footer" | "header" | "main" | "section";
-  children?: React.ReactNode;
-  paddingX?: string;
-  paddingY?: string;
-  padding?: string;
   background?: string;
   borderRadius?: string;
+  children?: React.ReactNode;
+  padding?: string;
+  paddingX?: string;
+  paddingY?: string;
 }
 
 /** A visual grouping of some content. */
 export const Box = React.forwardRef<HTMLDivElement, BoxProps>(function Box(
   {
     as,
+    background = "var(--color-white)",
+    borderRadius = 0,
     children,
     className,
     padding = 0,
     paddingX = 0,
     paddingY = 0,
-    background = "var(--color-white)",
-    borderRadius = 0,
     ...props
   },
   ref,
 ) {
-  const Component = as || "div";
+  const Component = as ?? "div";
   const py = paddingY || padding;
   const px = paddingX || padding;
   const boxProperties: CSSProperties = {
-    ["--py"]: py,
-    ["--px"]: px,
     ["--bg"]: background,
+    ["--px"]: px,
+    ["--py"]: py,
     ["--rad"]: borderRadius,
   };
 

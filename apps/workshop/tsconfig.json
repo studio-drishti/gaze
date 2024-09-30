@@ -1,5 +1,5 @@
 {
   "extends": "@gaze-ui/tsconfig/react-library.json",
-  "include": ["src"],
+  "include": ["src", ".storybook/*"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

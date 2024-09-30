@@ -1,33 +1,28 @@
-import * as React from "react";
 import classNames from "classnames/bind";
+import * as React from "react";
+
+import { CSSProperties } from "../../types.js";
 import styles from "./icon.module.css";
-import { CSSProperties } from "../../types";
 
 const cx = classNames.bind(styles);
 
 export interface IconProps
   extends Omit<React.ComponentPropsWithRef<"span">, "size"> {
-  label?: string;
-  space?: string;
-  className?: string;
-  size?: string;
   children: NonNullable<React.ReactNode>;
+  className?: string;
+  label?: string;
+  size?: string;
+  space?: string;
 }
 
 export const Icon = React.forwardRef<HTMLSpanElement, IconProps>(function Icon(
-  { space = "0.5em", size = "inherit", label, children, className, ...props },
+  { children, className, label, size = "inherit", space = "0.5em", ...props },
   ref,
 ) {
   const cssProperties: CSSProperties = {
-    ["--space"]: space,
     ["--size"]: size,
+    ["--space"]: space,
   };
-
-  if (space) {
-  }
-
-  if (size) {
-  }
 
   return (
     <span

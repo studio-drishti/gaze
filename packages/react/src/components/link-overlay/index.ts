@@ -1,1 +1,1 @@
-export * from "./link-overlay";
+export * from "./link-overlay.js";

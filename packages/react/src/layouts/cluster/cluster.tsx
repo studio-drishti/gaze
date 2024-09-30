@@ -1,38 +1,37 @@
-import * as React from "react";
 import classNames from "classnames/bind";
+import * as React from "react";
 
-import { CSSProperties } from "../../types";
-
+import { CSSProperties } from "../../types.js";
 import styles from "./cluster.module.css";
 
 const cx = classNames.bind(styles);
 
 export interface ClusterProps extends React.ComponentPropsWithRef<"div"> {
-  space?: string;
   align?: string;
-  justify?: string;
-  wrap?: "wrap" | "nowrap";
   children: NonNullable<React.ReactNode>;
+  justify?: string;
+  space?: string;
+  wrap?: "nowrap" | "wrap";
 }
 
 /** Flexible layout component for positioning items in a group. */
 export const Cluster = React.forwardRef<HTMLDivElement, ClusterProps>(
   function Cluster(
     {
-      space = 0,
       align = "center",
-      justify = "flex-start",
-      wrap = "wrap",
       children,
       className,
+      justify = "flex-start",
+      space = 0,
+      wrap = "wrap",
       ...props
     },
     ref,
   ) {
     const clusterProperties: CSSProperties = {
-      ["--space"]: space,
       ["--align"]: align,
       ["--justify"]: justify,
+      ["--space"]: space,
       ["--wrap"]: wrap,
     };
 

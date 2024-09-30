@@ -1,6 +1,7 @@
 import type { Preview } from "@storybook/react";
-import "@gaze-ui/tokens/css/variables.css";
+
 import "@gaze-ui/react/styles/base.css";
+import "@gaze-ui/tokens/css/variables.css";
 
 const preview: Preview = {
   parameters: {
@@ -8,7 +9,7 @@ const preview: Preview = {
     controls: {
       matchers: {
         color: /(background|color)$/i,
-        date: /Date$/i,
+        date: /date$/i,
       },
     },
   },

@@ -1,11 +1,12 @@
-import * as React from "react";
 import type { Meta } from "@storybook/react";
+
 import { Box, Switcher } from "@gaze-ui/react";
+import * as React from "react";
 
 const meta: Meta<typeof Switcher> = {
-  title: "Layouts/Switcher",
   component: Switcher,
   tags: ["autodocs"],
+  title: "Layouts/Switcher",
 };
 
 export default meta;

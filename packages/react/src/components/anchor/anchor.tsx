@@ -1,5 +1,6 @@
-import * as React from "react";
 import classNames from "classnames/bind";
+import * as React from "react";
+
 import styles from "./anchor.module.css";
 
 const cx = classNames.bind(styles);

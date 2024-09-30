@@ -1,15 +1,16 @@
-import * as React from "react";
 import type { Meta } from "@storybook/react";
+
+import { Icon, Text } from "@gaze-ui/react";
 import { IconSwords } from "@tabler/icons-react";
-import { Text, Icon } from "@gaze-ui/react";
+import * as React from "react";
 
 const meta: Meta<typeof Icon> = {
-  title: "Layouts/Icon",
   component: Icon,
   parameters: {
     layout: "centered",
   },
   tags: ["autodocs"],
+  title: "Layouts/Icon",
 };
 
 export default meta;

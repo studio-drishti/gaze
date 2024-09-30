@@ -1,11 +1,12 @@
-import * as React from "react";
 import type { Meta } from "@storybook/react";
+
 import { Box, Center } from "@gaze-ui/react";
+import * as React from "react";
 
 const meta: Meta<typeof Center> = {
   component: Center,
-  title: "Layouts/Center",
   tags: ["autodocs"],
+  title: "Layouts/Center",
 };
 
 export default meta;

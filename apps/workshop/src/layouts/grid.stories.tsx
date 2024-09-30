@@ -1,11 +1,12 @@
-import * as React from "react";
 import type { Meta } from "@storybook/react";
+
 import { Box, Grid } from "@gaze-ui/react";
+import * as React from "react";
 
 const meta: Meta<typeof Grid> = {
-  title: "Layouts/Grid",
   component: Grid,
   tags: ["autodocs"],
+  title: "Layouts/Grid",
 };
 
 export default meta;

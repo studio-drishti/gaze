@@ -1,13 +1,14 @@
 import type { Meta, StoryObj } from "@storybook/react";
+
 import { Heading } from "@gaze-ui/react";
 
 const meta: Meta<typeof Heading> = {
-  title: "Components/Heading",
   component: Heading,
   parameters: {
     layout: "centered",
   },
   tags: ["autodocs"],
+  title: "Components/Heading",
 };
 
 export default meta;

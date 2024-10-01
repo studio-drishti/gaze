@@ -28,5 +28,5 @@ jobs:
         with:
           install_command: npm ci
           build_command: npm run build
-          path: apps/workshop/storybook-static
+          path: apps/workshop/dist
           checkout: false

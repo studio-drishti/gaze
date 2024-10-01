@@ -7,7 +7,7 @@ on:
 jobs:
   mq:
     if: github.event_name != 'pull_request'
-    name: Merge queue check
+    name: Merge Queue Check
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repo

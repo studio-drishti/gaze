@@ -1,11 +1,13 @@
-name: Merge Queue
+name: MQ
 
 on:
+  pull_request:
   merge_group:
 
 jobs:
-  build:
-    name: Build and Test
+  mq:
+    if: github.event_name != 'pull_request'
+    name: Merge queue check
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repo

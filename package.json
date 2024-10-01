@@ -16,7 +16,24 @@
     "lint:fix": "turbo run lint -- --fix",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "changeset": "changeset",
-    "release": "turbo build && changeset publish"
+    "release": "turbo build && changeset publish",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "*": [
+      "cspell lint -c ./cspell.json --no-progress --no-summary"
+    ],
+    "*.css": [
+      "stylelint --fix",
+      "prettier --write"
+    ],
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "!(*.css|*.js|*.jsx|*.ts|*.tsx)": [
+      "prettier --ignore-unknown --write"
+    ]
   },
   "devDependencies": {
     "@changesets/changelog-github": "0.5.0",
@@ -24,8 +41,11 @@
     "@gaze-ui/eslint-config": "*",
     "@gaze-ui/stylelint-config": "*",
     "@gaze-ui/tsconfig": "*",
+    "cspell": "8.14.4",
     "eslint": "9.9.1",
     "eslint-config-turbo": "2.1.0",
+    "husky": "9.1.6",
+    "lint-staged": "15.2.10",
     "prettier": "3.3.3",
     "stylelint": "16.9.0",
     "turbo": "2.1.0",

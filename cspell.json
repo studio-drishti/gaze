@@ -9,7 +9,12 @@
     "sonarjs",
     "nextjs",
     "tabler",
-    "tseslint"
+    "tseslint",
+    "noto",
+    "segoe",
+    "neue",
+    "menlo",
+    "consolas"
   ],
   "flagWords": ["hte"],
   "allowCompoundWords": true,

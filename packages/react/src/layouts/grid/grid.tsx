@@ -19,8 +19,8 @@ export const Grid = React.forwardRef<HTMLDivElement, GridProps>(function Grid(
   ref,
 ) {
   const gridProperties: CSSProperties = {
-    ["--min"]: minimum,
-    ["--space"]: space,
+    ["--grid-min"]: minimum,
+    ["--grid-space"]: space,
   };
 
   return (

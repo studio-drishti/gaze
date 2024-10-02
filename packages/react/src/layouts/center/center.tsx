@@ -7,7 +7,6 @@ import styles from "./center.module.css";
 const cx = classNames.bind(styles);
 
 export interface CenterProps extends React.ComponentPropsWithRef<"div"> {
-  children: NonNullable<React.ReactNode>;
   gutter?: string;
   intrinsicCenter?: boolean;
   maxWidth?: string;
@@ -28,8 +27,8 @@ export const Center = React.forwardRef<HTMLDivElement, CenterProps>(
     ref,
   ) {
     const centerProperties: CSSProperties = {
-      ["--gutter"]: gutter,
-      ["--width"]: maxWidth,
+      ["--center-gutter"]: gutter,
+      ["--center-width"]: maxWidth,
     };
 
     return (

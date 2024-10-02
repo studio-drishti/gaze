@@ -13,6 +13,9 @@ export default meta;
 
 export const SixteenByNine = () => (
   <Frame aspectRatio={16 / 9}>
-    <Box background="var(--color-purple-500)" padding="var(--size-space-40)" />
+    <Box
+      background="var(--gaze-color-purple-500)"
+      padding="var(--gaze-size-space-40)"
+    />
   </Frame>
 );

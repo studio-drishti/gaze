@@ -1,7 +1,8 @@
 .anchor {
   color: inherit;
+  font-family: var(--gaze-font-base);
   text-decoration: underline;
-  border-radius: var(--size-radius-sm);
+  border-radius: var(--gaze-size-radius-sm);
   cursor: pointer;
 }
 
@@ -10,7 +11,6 @@
 }
 
 .anchor:focus {
-  outline: var(--size-space-px) solid
-    var(--outline-color, var(--color-cyan-500));
+  outline: var(--gaze-size-border-px) solid var(--gaze-color-outline-default);
   outline-offset: 0.25em;
 }

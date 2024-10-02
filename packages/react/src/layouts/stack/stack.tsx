@@ -7,7 +7,6 @@ import styles from "./stack.module.css";
 const cx = classNames.bind(styles);
 
 export interface StackProps extends React.ComponentPropsWithRef<"div"> {
-  children: NonNullable<React.ReactNode>;
   space: string;
 }
 

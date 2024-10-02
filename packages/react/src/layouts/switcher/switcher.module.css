@@ -1,12 +1,12 @@
 .switcher {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--space);
-  align-items: var(--align);
+  gap: var(--switcher-space);
+  align-items: var(--switcher-align);
 }
 
 .switcher > * {
-  flex-basis: calc((var(--threshold) - 100%) * 999);
+  flex-basis: calc((var(--switcher-threshold) - 100%) * 999);
   flex-grow: 1;
 }
 

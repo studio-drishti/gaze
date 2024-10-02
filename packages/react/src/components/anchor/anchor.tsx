@@ -5,19 +5,16 @@ import styles from "./anchor.module.css";
 
 const cx = classNames.bind(styles);
 
-export interface AnchorProps
-  extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
-  children: NonNullable<React.ReactNode>;
-}
+export type AnchorProps = React.ComponentPropsWithRef<"a">;
 
 export const Anchor = React.forwardRef<HTMLAnchorElement, AnchorProps>(
-  ({ children, ...props }, ref) => {
+  ({ children, className, ...props }, ref) => {
     return (
-      <a className={cx("anchor")} ref={ref} {...props}>
+      <a className={cx("anchor", className)} ref={ref} {...props}>
         {children}
       </a>
     );
-  }
+  },
 );
 
 Anchor.displayName = "Anchor";

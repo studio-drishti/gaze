@@ -2,6 +2,7 @@
   "source": ["src/tokens/**/*.json"],
   "platforms": {
     "css": {
+      "prefix": "gaze",
       "transforms": [
         "attribute/cti",
         "name/kebab",

@@ -1,12 +1,12 @@
 .text {
-  color: var(--text-color, var(--color-black));
-  font-family: var(--body-font, var(--font-sans));
-  font-weight: var(--body-weight, var(--weight-normal));
-  font-size: var(--size, var(--size-font-base));
-  line-height: var(--leading, var(--leading-normal));
   margin: 0;
+  color: var(--text-color, var(--gaze-color-text-default));
+  font-weight: var(--text-weight, var(--gaze-weight-normal));
+  font-size: var(--text-size, var(--gaze-size-font-base));
+  font-family: var(--gaze-font-base);
+  line-height: var(--text-leading, var(--gaze-leading-normal));
 }
 
 [data-invert="true"] .text {
-  color: var(--text-color-inverted, var(--color-white));
+  color: var(--gaze-color-text-inverted);
 }

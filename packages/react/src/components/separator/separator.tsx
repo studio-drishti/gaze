@@ -1,6 +1,7 @@
 import classNames from "classnames/bind";
 import * as React from "react";
 
+import { CSSProperties } from "../../types.js";
 import styles from "./separator.module.css";
 
 const cx = classNames.bind(styles);
@@ -14,14 +15,14 @@ export interface SeparatorProps {
 
 export const Separator = React.forwardRef<HTMLHRElement, SeparatorProps>(
   ({ className, color, thickness, variant = "solid" }, ref) => {
-    const separatorProperties: React.CSSProperties = {};
+    const separatorProperties: CSSProperties = {};
 
     if (thickness) {
-      separatorProperties["--sep-thickness"] = thickness;
+      separatorProperties["--separator-thickness"] = thickness;
     }
 
     if (color) {
-      separatorProperties["--sep-color"] = color;
+      separatorProperties["--separator-color"] = color;
     }
 
     return (

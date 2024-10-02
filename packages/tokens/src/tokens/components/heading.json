@@ -1,0 +1,68 @@
+{
+  "h1": {
+    "size": {
+      "$value": "{size.font.6xl}"
+    },
+    "leading": {
+      "$value": "{leading.none}"
+    },
+    "weight": {
+      "$value": "{weight.bold}"
+    }
+  },
+  "h2": {
+    "size": {
+      "$value": "{size.font.5xl}"
+    },
+    "leading": {
+      "$value": "{leading.none}"
+    },
+    "weight": {
+      "$value": "{weight.bold}"
+    }
+  },
+  "h3": {
+    "size": {
+      "$value": "{size.font.4xl}"
+    },
+    "leading": {
+      "$value": "{leading.tight}"
+    },
+    "weight": {
+      "$value": "{weight.bold}"
+    }
+  },
+  "h4": {
+    "size": {
+      "$value": "{size.font.3xl}"
+    },
+    "leading": {
+      "$value": "{leading.tight}"
+    },
+    "weight": {
+      "$value": "{weight.bold}"
+    }
+  },
+  "h5": {
+    "size": {
+      "$value": "{size.font.xl}"
+    },
+    "leading": {
+      "$value": "{leading.tight}"
+    },
+    "weight": {
+      "$value": "{weight.bold}"
+    }
+  },
+  "h6": {
+    "size": {
+      "$value": "{size.font.base}"
+    },
+    "leading": {
+      "$value": "{leading.tight}"
+    },
+    "weight": {
+      "$value": "{weight.bold}"
+    }
+  }
+}

@@ -8,7 +8,6 @@ const cx = classNames.bind(styles);
 
 export interface ClusterProps extends React.ComponentPropsWithRef<"div"> {
   align?: string;
-  children: NonNullable<React.ReactNode>;
   justify?: string;
   space?: string;
   wrap?: "nowrap" | "wrap";
@@ -29,10 +28,10 @@ export const Cluster = React.forwardRef<HTMLDivElement, ClusterProps>(
     ref,
   ) {
     const clusterProperties: CSSProperties = {
-      ["--align"]: align,
-      ["--justify"]: justify,
-      ["--space"]: space,
-      ["--wrap"]: wrap,
+      ["--cluster-align"]: align,
+      ["--cluster-justify"]: justify,
+      ["--cluster-space"]: space,
+      ["--cluster-wrap"]: wrap,
     };
 
     return (

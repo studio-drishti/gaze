@@ -8,7 +8,6 @@ const cx = classNames.bind(styles);
 
 export interface SwitcherProps extends React.ComponentPropsWithRef<"div"> {
   align?: string;
-  children: NonNullable<React.ReactNode>;
   /** Max number of elements that can appear in a row. */
   limit: 2 | 3 | 4;
   /** The space between child elements. */
@@ -24,9 +23,9 @@ export const Switcher = React.forwardRef<HTMLDivElement, SwitcherProps>(
     ref,
   ) {
     const switcherProperties: CSSProperties = {
-      ["--align"]: align,
-      ["--space"]: space,
-      ["--threshold"]: threshold,
+      ["--switcher-align"]: align,
+      ["--switcher-space"]: space,
+      ["--switcher-threshold"]: threshold,
     };
     return (
       <div

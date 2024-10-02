@@ -4,12 +4,12 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  aspect-ratio: var(--ratio);
-  background: var(--bg);
+  aspect-ratio: var(--frame-ratio);
+  background: var(--frame-bg);
 }
 
 .frame > * {
   inline-size: 100%;
   block-size: 100%;
-  object-fit: var(--fit);
+  object-fit: var(--frame-fit);
 }

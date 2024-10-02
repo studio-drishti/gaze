@@ -1,23 +1,24 @@
 .separator {
-  border-width: 0;
   height: 0;
   margin: 0;
-  border-top-width: var(--sep-thickness, var(--size-border-px));
-  border-top-color: var(--sep-color, var(--text-color, var(--color-black)));
+  border-style: var(--separator-border-style);
+  border-width: 0;
+  border-top-color: var(--separator-color, var(--gaze-color-text-default));
+  border-top-width: var(--separator-thickness, var(--gaze-size-border-px));
 }
 
 [data-invert="true"] .separator {
-  border-top-color: var(--sep-color, var(--color-white));
+  border-top-color: var(--separator-color, var(--gaze-color-text-inverted));
 }
 
 .solid {
-  border-style: solid;
+  --separator-border-style: solid;
 }
 
 .dotted {
-  border-style: dotted;
+  --separator-border-style: dotted;
 }
 
 .dashed {
-  border-style: dashed;
+  --separator-border-style: dashed;
 }

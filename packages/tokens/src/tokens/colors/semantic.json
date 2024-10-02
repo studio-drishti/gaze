@@ -1,0 +1,17 @@
+{
+  "color": {
+    "outline": {
+      "default": {
+        "$value": "{color.cyan.500}"
+      }
+    },
+    "text": {
+      "default": {
+        "$value": "{color.neutral.900}"
+      },
+      "inverted": {
+        "$value": "{color.white}"
+      }
+    }
+  }
+}

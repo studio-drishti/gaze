@@ -15,7 +15,7 @@ const meta: Meta<typeof Cluster> = {
 export default meta;
 
 export const Simple = () => (
-  <Cluster space="var(--gaze-size-space-20)">
+  <Cluster space="var(--gaze-space-20)">
     <Box background="var(--gaze-color-purple-200)">xx</Box>
     <Box background="var(--gaze-color-green-200)">xx</Box>
     <Box background="var(--gaze-color-yellow-200)">xxx</Box>

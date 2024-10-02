@@ -13,7 +13,7 @@
   color: var(--icon-color, var(--gaze-color-text-default));
   font-weight: var(--gaze-weight-normal);
   font-size: var(--icon-size);
-  font-family: var(--gaze-font-base);
+  font-family: var(--gaze-font-family-base);
 }
 
 .with-text {

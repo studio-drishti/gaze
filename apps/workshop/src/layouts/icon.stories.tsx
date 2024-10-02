@@ -16,7 +16,7 @@ const meta: Meta<typeof Icon> = {
 export default meta;
 
 export const IconOnly = () => (
-  <Text fontSize="var(--gaze-size-font-4xl)">
+  <Text fontSize="var(--gaze-font-size-4xl)">
     <Icon label="I challenge you to a duel">
       <IconSwords />
     </Icon>
@@ -24,7 +24,7 @@ export const IconOnly = () => (
 );
 
 export const WithText = () => (
-  <Text fontSize="var(--gaze-size-font-xl)">
+  <Text fontSize="var(--gaze-font-size-xl)">
     <Icon>
       <IconSwords /> I challenge you to a duel
     </Icon>

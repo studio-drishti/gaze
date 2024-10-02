@@ -1,6 +1,6 @@
 {
-  "size": {
-    "border": {
+  "border": {
+    "width": {
       "$type": "dimension",
       "0": { "$value": "0" },
       "px": { "$value": "1" },

@@ -21,7 +21,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "npm run build && chokidar  \"src/tokens/**/*.json\" -c \"npm run build\"",
-    "build": "npm run clean && style-dictionary build",
+    "build": "style-dictionary build",
     "clean": "style-dictionary clean"
   },
   "devDependencies": {

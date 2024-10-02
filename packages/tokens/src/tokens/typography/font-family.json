@@ -1,14 +1,16 @@
 {
   "font": {
-    "$type": "fontFamily",
-    "base": {
-      "$value": "ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji"
-    },
-    "monospace": {
-      "$value": "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace"
-    },
-    "heading": {
-      "$value": "{font.base}"
+    "family": {
+      "$type": "fontFamily",
+      "base": {
+        "$value": "ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji"
+      },
+      "monospace": {
+        "$value": "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace"
+      },
+      "heading": {
+        "$value": "{font.family.base}"
+      }
     }
   }
 }

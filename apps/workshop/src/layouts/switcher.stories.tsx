@@ -12,18 +12,18 @@ const meta: Meta<typeof Switcher> = {
 export default meta;
 
 export const Three = () => (
-  <Switcher limit={3} space="var(--gaze-size-space-40)" threshold="40rem">
+  <Switcher limit={3} space="var(--gaze-space-40)" threshold="40rem">
     <Box
       background="var(--gaze-color-purple-500)"
-      padding="var(--gaze-size-space-50)"
+      padding="var(--gaze-space-50)"
     />
     <Box
       background="var(--gaze-color-purple-500)"
-      padding="var(--gaze-size-space-50)"
+      padding="var(--gaze-space-50)"
     />
     <Box
       background="var(--gaze-color-purple-500)"
-      padding="var(--gaze-size-space-50)"
+      padding="var(--gaze-space-50)"
     />
   </Switcher>
 );
@@ -32,20 +32,20 @@ export const Align = () => (
   <Switcher
     align="center"
     limit={3}
-    space="var(--gaze-size-space-40)"
+    space="var(--gaze-space-40)"
     threshold="40rem"
   >
     <Box
       background="var(--gaze-color-purple-500)"
-      padding="var(--gaze-size-space-30)"
+      padding="var(--gaze-space-30)"
     />
     <Box
       background="var(--gaze-color-purple-500)"
-      padding="var(--gaze-size-space-50)"
+      padding="var(--gaze-space-50)"
     />
     <Box
       background="var(--gaze-color-purple-500)"
-      padding="var(--gaze-size-space-70)"
+      padding="var(--gaze-space-70)"
     />
   </Switcher>
 );

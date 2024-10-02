@@ -2,7 +2,7 @@
   margin: 0;
   font-weight: var(--heading-weight);
   font-size: var(--heading-size);
-  font-family: var(--gaze-font-heading);
+  font-family: var(--gaze-font-family-heading);
   line-height: var(--heading-leading);
 }
 

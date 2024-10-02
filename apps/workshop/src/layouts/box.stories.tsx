@@ -18,7 +18,7 @@ type Story = StoryObj<typeof Box>;
 export const Simple: Story = {
   args: {
     background: "var(--gaze-color-lime-300)",
-    borderRadius: "var(--gaze-size-radius-base)",
-    padding: "var(--gaze-size-space-80)",
+    borderRadius: "var(--gaze-radius-base)",
+    padding: "var(--gaze-space-80)",
   },
 };

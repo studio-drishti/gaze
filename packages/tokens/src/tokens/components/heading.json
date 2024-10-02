@@ -1,7 +1,7 @@
 {
   "h1": {
     "size": {
-      "$value": "{size.font.6xl}"
+      "$value": "{font.size.6xl}"
     },
     "leading": {
       "$value": "{leading.none}"
@@ -12,7 +12,7 @@
   },
   "h2": {
     "size": {
-      "$value": "{size.font.5xl}"
+      "$value": "{font.size.5xl}"
     },
     "leading": {
       "$value": "{leading.none}"
@@ -23,7 +23,7 @@
   },
   "h3": {
     "size": {
-      "$value": "{size.font.4xl}"
+      "$value": "{font.size.4xl}"
     },
     "leading": {
       "$value": "{leading.tight}"
@@ -34,7 +34,7 @@
   },
   "h4": {
     "size": {
-      "$value": "{size.font.3xl}"
+      "$value": "{font.size.3xl}"
     },
     "leading": {
       "$value": "{leading.tight}"
@@ -45,7 +45,7 @@
   },
   "h5": {
     "size": {
-      "$value": "{size.font.xl}"
+      "$value": "{font.size.xl}"
     },
     "leading": {
       "$value": "{leading.tight}"
@@ -56,7 +56,7 @@
   },
   "h6": {
     "size": {
-      "$value": "{size.font.base}"
+      "$value": "{font.size.lg}"
     },
     "leading": {
       "$value": "{leading.tight}"

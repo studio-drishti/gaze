@@ -4,7 +4,7 @@
   border-style: var(--separator-border-style);
   border-width: 0;
   border-top-color: var(--separator-color, var(--gaze-color-text-default));
-  border-top-width: var(--separator-thickness, var(--gaze-size-border-px));
+  border-top-width: var(--separator-thickness, var(--gaze-border-width-px));
 }
 
 [data-invert="true"] .separator {

@@ -1,15 +1,13 @@
 {
-  "size": {
-    "radius": {
-      "$type": "dimension",
-      "none": { "$value": "0" },
-      "sm": { "$value": "2" },
-      "base": { "$value": "4" },
-      "md": { "$value": "6" },
-      "lg": { "$value": "8" },
-      "2xl": { "$value": "12" },
-      "3xl": { "$value": "16" },
-      "full": { "$value": "9999" }
-    }
+  "radius": {
+    "$type": "dimension",
+    "none": { "$value": "0" },
+    "sm": { "$value": "2" },
+    "base": { "$value": "4" },
+    "md": { "$value": "6" },
+    "lg": { "$value": "8" },
+    "2xl": { "$value": "12" },
+    "3xl": { "$value": "16" },
+    "full": { "$value": "9999" }
   }
 }

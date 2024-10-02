@@ -8,7 +8,6 @@ const cx = classNames.bind(styles);
 
 export interface SidebarProps extends React.ComponentPropsWithRef<"div"> {
   align?: string;
-  children: NonNullable<React.ReactNode>;
   /** Narrowest the main element can be before wrapping. */
   minimum?: `${number}%`;
   /** Should the order of elements be reversed when not wrapping? Useful if you want the sidebar stacked in a certain order. */
@@ -38,10 +37,10 @@ export const Sidebar = React.forwardRef<HTMLDivElement, SidebarProps>(
     ref,
   ) {
     const cssProperties: CSSProperties = {
-      ["--align"]: align,
-      ["--min"]: minimum,
-      ["--space"]: space,
-      ["--width"]: sideWidth,
+      ["--sidebar-align"]: align,
+      ["--sidebar-min"]: minimum,
+      ["--sidebar-space"]: space,
+      ["--sidebar-width"]: sideWidth,
     };
 
     return (

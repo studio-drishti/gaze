@@ -9,7 +9,6 @@ const cx = classNames.bind(styles);
 export interface FrameProps extends React.ComponentPropsWithRef<"div"> {
   aspectRatio: number;
   background?: string;
-  children: React.ReactNode;
   fit?: "contain" | "cover";
 }
 
@@ -26,9 +25,9 @@ export const Frame = React.forwardRef<HTMLDivElement, FrameProps>(
     ref,
   ) {
     const cssProperties: CSSProperties = {
-      ["--bg"]: background,
-      ["--fit"]: fit,
-      ["--ratio"]: aspectRatio,
+      ["--frame-bg"]: background,
+      ["--frame-fit"]: fit,
+      ["--frame-ratio"]: aspectRatio,
     };
 
     return (

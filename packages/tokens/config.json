@@ -2,11 +2,13 @@
   "source": ["src/tokens/**/*.json"],
   "platforms": {
     "css": {
+      "prefix": "gaze",
       "transforms": [
         "attribute/cti",
-        "name/cti/kebab",
+        "name/kebab",
         "size/pxToRem",
-        "color/css"
+        "color/css",
+        "fontFamily/css"
       ],
       "buildPath": "dist/css/",
       "files": [

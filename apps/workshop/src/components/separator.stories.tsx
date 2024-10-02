@@ -21,8 +21,8 @@ export const Solid: Story = {
 
 export const Dotted = {
   args: {
-    color: "var(--color-blue-400)",
-    thickness: "var(--size-border-2)",
+    color: "var(--gaze-color-blue-400)",
+    thickness: "var(--gaze-border-width-2)",
     variant: "dotted",
   },
 };

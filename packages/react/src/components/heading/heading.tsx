@@ -7,10 +7,8 @@ const cx = classNames.bind(styles);
 
 type HeadingLevelOptions = "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
 
-export interface HeadingProps {
+export interface HeadingProps extends React.ComponentPropsWithRef<"h1"> {
   as: HeadingLevelOptions;
-  children: NonNullable<React.ReactNode>;
-  className?: string;
   variant?: HeadingLevelOptions;
 }
 

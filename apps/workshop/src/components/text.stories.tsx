@@ -26,6 +26,6 @@ export const Large: Story = {
   args: {
     children:
       "Outside of a dog, a book is man's best friend. Inside of a dog, it's too dark to read.",
-    fontSize: "var(--size-font-2xl)",
+    fontSize: "var(--gaze-font-size-2xl)",
   },
 };

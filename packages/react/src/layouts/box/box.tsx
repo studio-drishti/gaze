@@ -10,7 +10,6 @@ export interface BoxProps extends React.ComponentPropsWithRef<"div"> {
   as?: "article" | "div" | "footer" | "header" | "main" | "section";
   background?: string;
   borderRadius?: string;
-  children?: React.ReactNode;
   padding?: string;
   paddingX?: string;
   paddingY?: string;
@@ -20,7 +19,7 @@ export interface BoxProps extends React.ComponentPropsWithRef<"div"> {
 export const Box = React.forwardRef<HTMLDivElement, BoxProps>(function Box(
   {
     as,
-    background = "var(--color-white)",
+    background = "var(--gaze-color-white)",
     borderRadius = 0,
     children,
     className,
@@ -35,10 +34,10 @@ export const Box = React.forwardRef<HTMLDivElement, BoxProps>(function Box(
   const py = paddingY || padding;
   const px = paddingX || padding;
   const boxProperties: CSSProperties = {
-    ["--bg"]: background,
-    ["--px"]: px,
-    ["--py"]: py,
-    ["--rad"]: borderRadius,
+    ["--box-bg"]: background,
+    ["--box-px"]: px,
+    ["--box-py"]: py,
+    ["--box-rad"]: borderRadius,
   };
 
   return (

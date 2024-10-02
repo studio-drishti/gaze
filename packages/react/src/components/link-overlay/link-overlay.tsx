@@ -10,9 +10,9 @@ export type LinkOverlayProps = React.ComponentPropsWithRef<"a">;
 export const LinkOverlay = React.forwardRef<
   HTMLAnchorElement,
   LinkOverlayProps
->(function LinkOverlay({ children, ...props }, ref) {
+>(function LinkOverlay({ children, className, ...props }, ref) {
   return (
-    <a {...props} className={cx("link-overlay")} ref={ref}>
+    <a {...props} className={cx("link-overlay", className)} ref={ref}>
       {children}
     </a>
   );

@@ -10,10 +10,10 @@
   display: inline-flex;
   flex-wrap: nowrap;
   align-items: center;
-  color: var(--color, var(--text-color));
-  font-weight: var(--body-weight, var(--weight-normal));
-  font-size: var(--size);
-  font-family: var(--body-font, var(--font-sans));
+  color: var(--icon-color, var(--gaze-color-text-default));
+  font-weight: var(--gaze-weight-normal);
+  font-size: var(--icon-size);
+  font-family: var(--gaze-font-family-base);
 }
 
 .with-text {
@@ -21,9 +21,9 @@
 }
 
 .with-text > svg {
-  margin-inline-end: var(--space);
+  margin-inline-end: var(--icon-space);
 }
 
 [data-invert="true"] .icon {
-  color: var(--color-white);
+  color: var(--gaze-color-text-inverted);
 }

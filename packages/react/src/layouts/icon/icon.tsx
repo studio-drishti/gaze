@@ -8,8 +8,6 @@ const cx = classNames.bind(styles);
 
 export interface IconProps
   extends Omit<React.ComponentPropsWithRef<"span">, "size"> {
-  children: NonNullable<React.ReactNode>;
-  className?: string;
   label?: string;
   size?: string;
   space?: string;
@@ -20,8 +18,8 @@ export const Icon = React.forwardRef<HTMLSpanElement, IconProps>(function Icon(
   ref,
 ) {
   const cssProperties: CSSProperties = {
-    ["--size"]: size,
-    ["--space"]: space,
+    ["--icon-size"]: size,
+    ["--icon-space"]: space,
   };
 
   return (

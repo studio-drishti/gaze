@@ -1,6 +1,6 @@
 .link-box {
   position: relative;
-  border-radius: var(--size-radius-sm);
+  border-radius: var(--gaze-radius-sm);
 
   & a[href]:not(.link-overlay) {
     position: relative;
@@ -8,8 +8,7 @@
   }
 
   &:has(.link-overlay:focus-visible) {
-    outline: var(--outline-color, var(--color-cyan-500)) solid
-      var(--size-space-px);
+    outline: var(--gaze-color-outline-default) solid var(--gaze-border-width-px);
     outline-offset: 0.25em;
   }
 }

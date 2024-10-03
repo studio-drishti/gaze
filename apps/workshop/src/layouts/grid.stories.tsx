@@ -5,7 +5,6 @@ import * as React from "react";
 
 const meta: Meta<typeof Grid> = {
   component: Grid,
-  tags: ["autodocs"],
   title: "Layouts/Grid",
 };
 

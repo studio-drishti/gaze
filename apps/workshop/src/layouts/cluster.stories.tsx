@@ -8,7 +8,6 @@ const meta: Meta<typeof Cluster> = {
   parameters: {
     layout: "centered",
   },
-  tags: ["autodocs"],
   title: "Layouts/Cluster",
 };
 

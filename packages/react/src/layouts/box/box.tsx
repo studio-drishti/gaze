@@ -16,23 +16,23 @@ export interface BoxProps extends React.ComponentPropsWithRef<"div"> {
 }
 
 /** A visual grouping of some content. */
-export const Box = React.forwardRef<HTMLDivElement, BoxProps>(function Box(
+export const Box = React.forwardRef(function Box(
   {
     as,
     background = "var(--gaze-color-white)",
-    borderRadius = 0,
+    borderRadius = "var(--gaze-radius-none)",
     children,
     className,
-    padding = 0,
-    paddingX = 0,
-    paddingY = 0,
+    padding,
+    paddingX,
+    paddingY,
     ...props
-  },
-  ref,
+  }: BoxProps,
+  ref: React.ForwardedRef<HTMLDivElement>,
 ) {
   const Component = as ?? "div";
-  const py = paddingY || padding;
-  const px = paddingX || padding;
+  const py = paddingY ?? padding ?? "0";
+  const px = paddingX ?? padding ?? "0";
   const boxProperties: CSSProperties = {
     ["--box-bg"]: background,
     ["--box-px"]: px,

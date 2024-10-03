@@ -5,7 +5,6 @@ import * as React from "react";
 
 const meta: Meta<typeof Switcher> = {
   component: Switcher,
-  tags: ["autodocs"],
   title: "Layouts/Switcher",
 };
 

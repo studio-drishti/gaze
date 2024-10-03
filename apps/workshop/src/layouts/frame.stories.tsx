@@ -5,7 +5,6 @@ import * as React from "react";
 
 const meta: Meta<typeof Frame> = {
   component: Frame,
-  tags: ["autodocs"],
   title: "Layouts/Frame",
 };
 

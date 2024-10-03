@@ -9,7 +9,6 @@ const meta: Meta<typeof Icon> = {
   parameters: {
     layout: "centered",
   },
-  tags: ["autodocs"],
   title: "Layouts/Icon",
 };
 

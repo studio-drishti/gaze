@@ -5,7 +5,6 @@ import * as React from "react";
 
 const meta: Meta<typeof Center> = {
   component: Center,
-  tags: ["autodocs"],
   title: "Layouts/Center",
 };
 

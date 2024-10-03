@@ -5,7 +5,6 @@ import * as React from "react";
 
 const meta: Meta<typeof Stack> = {
   component: Stack,
-  tags: ["autodocs"],
   title: "Layouts/Stack",
 };
 

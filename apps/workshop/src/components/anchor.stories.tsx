@@ -7,7 +7,6 @@ const meta: Meta<typeof Anchor> = {
   parameters: {
     layout: "centered",
   },
-  tags: ["autodocs"],
   title: "Components/Anchor",
 };
 

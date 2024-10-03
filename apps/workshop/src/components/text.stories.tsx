@@ -7,7 +7,6 @@ const meta: Meta<typeof Text> = {
   parameters: {
     layout: "centered",
   },
-  tags: ["autodocs"],
   title: "Components/Text",
 };
 

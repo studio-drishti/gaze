@@ -1,4 +1,4 @@
-import type { Meta } from "@storybook/react";
+import type { Meta, StoryObj } from "@storybook/react";
 
 import { Icon, Text } from "@gaze-ui/react";
 import { IconSwords } from "@tabler/icons-react";
@@ -14,18 +14,27 @@ const meta: Meta<typeof Icon> = {
 
 export default meta;
 
-export const IconOnly = () => (
-  <Text fontSize="var(--gaze-font-size-4xl)">
-    <Icon label="I challenge you to a duel">
-      <IconSwords />
-    </Icon>
-  </Text>
-);
+type Story = StoryObj<typeof Icon>;
 
-export const WithText = () => (
-  <Text fontSize="var(--gaze-font-size-xl)">
-    <Icon>
-      <IconSwords /> I challenge you to a duel
-    </Icon>
-  </Text>
-);
+export const IconOnly: Story = {
+  args: {
+    label: "I challenge you to a duel.",
+  },
+  render: (args) => (
+    <Text fontSize="var(--gaze-font-size-4xl)">
+      <Icon {...args}>
+        <IconSwords />
+      </Icon>
+    </Text>
+  ),
+};
+
+export const WithText: Story = {
+  render: (args) => (
+    <Text fontSize="var(--gaze-font-size-xl)">
+      <Icon {...args}>
+        <IconSwords /> I challenge you to a duel
+      </Icon>
+    </Text>
+  ),
+};

@@ -21,37 +21,35 @@ export interface SidebarProps extends React.ComponentPropsWithRef<"div"> {
 }
 
 /** A layout with a fixed width sidebar that stacks when the fluid width element reaches its minimum allowance.  */
-export const Sidebar = React.forwardRef<HTMLDivElement, SidebarProps>(
-  function Sidebar(
-    {
-      align = "stretch",
-      children,
-      className,
-      minimum = "50%",
-      reverse = false,
-      side = "left",
-      sideWidth = "auto",
-      space = "0",
-      ...props
-    },
-    ref,
-  ) {
-    const cssProperties: CSSProperties = {
-      ["--sidebar-align"]: align,
-      ["--sidebar-min"]: minimum,
-      ["--sidebar-space"]: space,
-      ["--sidebar-width"]: sideWidth,
-    };
+export const Sidebar = React.forwardRef(function Sidebar(
+  {
+    align = "stretch",
+    children,
+    className,
+    minimum = "50%",
+    reverse = false,
+    side = "left",
+    sideWidth = "auto",
+    space = "0",
+    ...props
+  }: SidebarProps,
+  ref: React.ForwardedRef<HTMLDivElement>,
+) {
+  const cssProperties: CSSProperties = {
+    ["--sidebar-align"]: align,
+    ["--sidebar-min"]: minimum,
+    ["--sidebar-space"]: space,
+    ["--sidebar-width"]: sideWidth,
+  };
 
-    return (
-      <div
-        {...props}
-        className={cx("sidebar", { reverse }, side, className)}
-        ref={ref}
-        style={cssProperties}
-      >
-        {children}
-      </div>
-    );
-  },
-);
+  return (
+    <div
+      {...props}
+      className={cx("sidebar", { reverse }, side, className)}
+      ref={ref}
+      style={cssProperties}
+    >
+      {children}
+    </div>
+  );
+});

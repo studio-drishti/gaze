@@ -13,9 +13,16 @@ export interface IconProps
   space?: string;
 }
 
-export const Icon = React.forwardRef<HTMLSpanElement, IconProps>(function Icon(
-  { children, className, label, size = "inherit", space = "0.5em", ...props },
-  ref,
+export const Icon = React.forwardRef(function Icon(
+  {
+    children,
+    className,
+    label,
+    size = "inherit",
+    space = "0.5em",
+    ...props
+  }: IconProps,
+  ref: React.ForwardedRef<HTMLSpanElement>,
 ) {
   const cssProperties: CSSProperties = {
     ["--icon-size"]: size,

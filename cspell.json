@@ -1,7 +1,7 @@
 {
   "version": "0.2",
   "language": "en",
-  "words": ["drishti", "mjsx", "mtsx"],
+  "words": ["drishti", "mjsx", "mtsx", "harpo"],
   "ignoreWords": [
     "eamodio",
     "dbaeumer",

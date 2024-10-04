@@ -9,36 +9,65 @@ const cx = classNames.bind(styles);
 export interface BoxProps extends React.ComponentPropsWithRef<"div"> {
   as?: "article" | "div" | "footer" | "header" | "main" | "section";
   background?: string;
+  borderColor?: string;
   borderRadius?: string;
+  borderStyle?: "dashed" | "dotted" | "solid";
+  borderWidth?: string;
   padding?: string;
   paddingX?: string;
   paddingY?: string;
 }
 
-/** A visual grouping of some content. */
-export const Box = React.forwardRef<HTMLDivElement, BoxProps>(function Box(
+/** A stylized visual grouping of some content. */
+export const Box = React.forwardRef(function Box(
   {
     as,
-    background = "var(--gaze-color-white)",
-    borderRadius = 0,
+    background,
+    borderColor,
+    borderRadius,
+    borderStyle,
+    borderWidth,
     children,
     className,
-    padding = 0,
-    paddingX = 0,
-    paddingY = 0,
+    padding,
+    paddingX,
+    paddingY,
     ...props
-  },
-  ref,
+  }: BoxProps,
+  ref: React.ForwardedRef<HTMLDivElement>,
 ) {
   const Component = as ?? "div";
-  const py = paddingY || padding;
-  const px = paddingX || padding;
-  const boxProperties: CSSProperties = {
-    ["--box-bg"]: background,
-    ["--box-px"]: px,
-    ["--box-py"]: py,
-    ["--box-rad"]: borderRadius,
-  };
+  const py = paddingY ?? padding;
+  const px = paddingX ?? padding;
+  const boxProperties: CSSProperties = {};
+
+  if (background) {
+    boxProperties["--box-bg"] = background;
+  }
+
+  if (borderStyle) {
+    boxProperties["--box-bs"] = borderStyle;
+  }
+
+  if (borderWidth) {
+    boxProperties["--box-bw"] = borderWidth;
+  }
+
+  if (borderRadius) {
+    boxProperties["--box-rad"] = borderRadius;
+  }
+
+  if (borderColor) {
+    boxProperties["--box-bc"] = borderColor;
+  }
+
+  if (py) {
+    boxProperties["--box-py"] = py;
+  }
+
+  if (px) {
+    boxProperties["--box-px"] = px;
+  }
 
   return (
     <Component

@@ -7,10 +7,11 @@ const cx = classNames.bind(styles);
 
 export type LinkOverlayProps = React.ComponentPropsWithRef<"a">;
 
-export const LinkOverlay = React.forwardRef<
-  HTMLAnchorElement,
-  LinkOverlayProps
->(function LinkOverlay({ children, className, ...props }, ref) {
+/** Semantic and accessible overlay for clickable areas such as article cards. */
+export const LinkOverlay = React.forwardRef(function LinkOverlay(
+  { children, className, ...props }: LinkOverlayProps,
+  ref: React.ForwardedRef<HTMLAnchorElement>,
+) {
   return (
     <a {...props} className={cx("link-overlay", className)} ref={ref}>
       {children}
@@ -20,12 +21,13 @@ export const LinkOverlay = React.forwardRef<
 
 export type LinkBoxProps = React.ComponentPropsWithRef<"div">;
 
-export const LinkBox = React.forwardRef<HTMLDivElement, LinkBoxProps>(
-  function LinkBox({ children, ...props }) {
-    return (
-      <div {...props} className={cx("link-box")}>
-        {children}
-      </div>
-    );
-  },
-);
+export const LinkBox = React.forwardRef(function LinkBox(
+  { children, className, ...props }: LinkBoxProps,
+  ref: React.ForwardedRef<HTMLDivElement>,
+) {
+  return (
+    <div {...props} className={cx("link-box", className)} ref={ref}>
+      {children}
+    </div>
+  );
+});

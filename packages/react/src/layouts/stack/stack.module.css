@@ -1,3 +1,7 @@
-.stack > div > * + * {
-  margin-block-start: var(--stack-space);
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: var(--stack-space);
+  align-items: var(--stack-align);
+  justify-content: var(--stack-justify);
 }

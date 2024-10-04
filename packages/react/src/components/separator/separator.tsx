@@ -6,34 +6,37 @@ import styles from "./separator.module.css";
 
 const cx = classNames.bind(styles);
 
-export interface SeparatorProps {
-  className?: string;
+export interface SeparatorProps extends React.ComponentPropsWithRef<"hr"> {
   color?: string;
   thickness?: string;
-  variant?: "dotted" | "solid";
+  variant?: "dashed" | "dotted" | "solid";
 }
 
-export const Separator = React.forwardRef<HTMLHRElement, SeparatorProps>(
-  ({ className, color, thickness, variant = "solid" }, ref) => {
-    const separatorProperties: CSSProperties = {};
+/** Visually separates content in a group. */
+export const Separator = React.forwardRef(function Separator(
+  { className, color, thickness, variant }: SeparatorProps,
+  ref: React.ForwardedRef<HTMLHRElement>,
+) {
+  const separatorProperties: CSSProperties = {};
 
-    if (thickness) {
-      separatorProperties["--separator-thickness"] = thickness;
-    }
+  if (variant) {
+    separatorProperties["--separator-variant"] = variant;
+  }
 
-    if (color) {
-      separatorProperties["--separator-color"] = color;
-    }
+  if (thickness) {
+    separatorProperties["--separator-thickness"] = thickness;
+  }
 
-    return (
-      <hr
-        aria-orientation="horizontal"
-        className={cx("separator", variant, className)}
-        ref={ref}
-        style={separatorProperties}
-      />
-    );
-  },
-);
+  if (color) {
+    separatorProperties["--separator-color"] = color;
+  }
 
-Separator.displayName = "Separator";
+  return (
+    <hr
+      aria-orientation="horizontal"
+      className={cx("separator", className)}
+      ref={ref}
+      style={separatorProperties}
+    />
+  );
+});

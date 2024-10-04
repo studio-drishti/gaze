@@ -1,4 +1,4 @@
-import type { Meta } from "@storybook/react";
+import type { Meta, StoryObj } from "@storybook/react";
 
 import {
   Anchor,
@@ -20,18 +20,23 @@ const meta: Meta<typeof LinkOverlay> = {
 
 export default meta;
 
-export const Simple = () => {
-  return (
+type Story = StoryObj<typeof LinkOverlay>;
+
+export const Simple: Story = {
+  args: {
+    href: "https://studiodrishti.co",
+  },
+  render: (args) => (
     <LinkBox>
       <Stack space="0.5rem">
         <Heading as="h4">
-          <LinkOverlay href="#">Title of this post</LinkOverlay>
+          <LinkOverlay {...args}>Title of this post</LinkOverlay>
         </Heading>
         <Text>
           Some text to go with it. And hey look: another{" "}
-          <Anchor href="#2">link</Anchor>.
+          <Anchor href="https://rubbishrabble.com">link</Anchor>.
         </Text>
       </Stack>
     </LinkBox>
-  );
+  ),
 };

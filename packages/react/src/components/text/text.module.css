@@ -10,3 +10,17 @@
 [data-invert="true"] .text {
   color: var(--gaze-color-text-inverted);
 }
+
+em.text,
+i.text {
+  font-style: italic;
+}
+
+strong.text,
+b.text {
+  font-weight: var(--gaze-weight-bold);
+}
+
+u.text {
+  text-decoration: underline;
+}

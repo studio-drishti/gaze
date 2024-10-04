@@ -7,7 +7,6 @@ const meta: Meta<typeof Heading> = {
   parameters: {
     layout: "centered",
   },
-  tags: ["autodocs"],
   title: "Components/Heading",
 };
 

@@ -6,7 +6,15 @@ import styles from "./text.module.css";
 
 const cx = classNames.bind(styles);
 
-type TextElementOptions = "div" | "p" | "span";
+type TextElementOptions =
+  | "b"
+  | "div"
+  | "em"
+  | "i"
+  | "p"
+  | "span"
+  | "strong"
+  | "u";
 
 export interface TextProps extends React.ComponentPropsWithRef<"p"> {
   as?: TextElementOptions;
@@ -16,37 +24,37 @@ export interface TextProps extends React.ComponentPropsWithRef<"p"> {
   weight?: string;
 }
 
-export const Text = React.forwardRef<HTMLParagraphElement, TextProps>(
-  ({ as, children, className, color, fontSize, leading, weight }, ref) => {
-    const TextComponent = as ?? "p";
-    const cssProperties: CSSProperties = {};
+/** Paragraphs and text. */
+export const Text = React.forwardRef(function Text(
+  { as, children, className, color, fontSize, leading, weight }: TextProps,
+  ref: React.ForwardedRef<HTMLParagraphElement>,
+) {
+  const TextComponent = as ?? "p";
+  const cssProperties: CSSProperties = {};
 
-    if (fontSize) {
-      cssProperties["--text-size"] = fontSize;
-    }
+  if (fontSize) {
+    cssProperties["--text-size"] = fontSize;
+  }
 
-    if (leading) {
-      cssProperties["--text-leading"] = leading;
-    }
+  if (leading) {
+    cssProperties["--text-leading"] = leading;
+  }
 
-    if (weight) {
-      cssProperties["--text-weight"] = weight;
-    }
+  if (weight) {
+    cssProperties["--text-weight"] = weight;
+  }
 
-    if (color) {
-      cssProperties["--text-color"] = color;
-    }
+  if (color) {
+    cssProperties["--text-color"] = color;
+  }
 
-    return (
-      <TextComponent
-        className={cx("text", className)}
-        ref={ref}
-        style={cssProperties}
-      >
-        {children}
-      </TextComponent>
-    );
-  },
-);
-
-Text.displayName = "Text";
+  return (
+    <TextComponent
+      className={cx("text", className)}
+      ref={ref}
+      style={cssProperties}
+    >
+      {children}
+    </TextComponent>
+  );
+});

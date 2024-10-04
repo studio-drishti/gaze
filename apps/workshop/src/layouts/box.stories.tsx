@@ -7,7 +7,6 @@ const meta: Meta<typeof Box> = {
   parameters: {
     layout: "centered",
   },
-  tags: ["autodocs"],
   title: "Layouts/Box",
 };
 

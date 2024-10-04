@@ -14,35 +14,33 @@ export interface ClusterProps extends React.ComponentPropsWithRef<"div"> {
 }
 
 /** Flexible layout component for positioning items in a group. */
-export const Cluster = React.forwardRef<HTMLDivElement, ClusterProps>(
-  function Cluster(
-    {
-      align = "center",
-      children,
-      className,
-      justify = "flex-start",
-      space = 0,
-      wrap = "wrap",
-      ...props
-    },
-    ref,
-  ) {
-    const clusterProperties: CSSProperties = {
-      ["--cluster-align"]: align,
-      ["--cluster-justify"]: justify,
-      ["--cluster-space"]: space,
-      ["--cluster-wrap"]: wrap,
-    };
+export const Cluster = React.forwardRef(function Cluster(
+  {
+    align = "center",
+    children,
+    className,
+    justify = "flex-start",
+    space = "var(--gaze-space-0)",
+    wrap = "wrap",
+    ...props
+  }: ClusterProps,
+  ref: React.ForwardedRef<HTMLDivElement>,
+) {
+  const clusterProperties: CSSProperties = {
+    ["--cluster-align"]: align,
+    ["--cluster-justify"]: justify,
+    ["--cluster-space"]: space,
+    ["--cluster-wrap"]: wrap,
+  };
 
-    return (
-      <div
-        {...props}
-        className={cx("cluster", className)}
-        ref={ref}
-        style={clusterProperties}
-      >
-        {children}
-      </div>
-    );
-  },
-);
+  return (
+    <div
+      {...props}
+      className={cx("cluster", className)}
+      ref={ref}
+      style={clusterProperties}
+    >
+      {children}
+    </div>
+  );
+});

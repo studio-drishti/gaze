@@ -1,7 +1,7 @@
 .separator {
   height: 0;
   margin: 0;
-  border-style: var(--separator-border-style);
+  border-style: var(--separator-variant, "solid");
   border-width: 0;
   border-top-color: var(--separator-color, var(--gaze-color-text-default));
   border-top-width: var(--separator-thickness, var(--gaze-border-width-px));
@@ -9,16 +9,4 @@
 
 [data-invert="true"] .separator {
   border-top-color: var(--separator-color, var(--gaze-color-text-inverted));
-}
-
-.solid {
-  --separator-border-style: solid;
-}
-
-.dotted {
-  --separator-border-style: dotted;
-}
-
-.dashed {
-  --separator-border-style: dashed;
 }

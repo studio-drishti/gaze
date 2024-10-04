@@ -17,32 +17,37 @@ export interface SwitcherProps extends React.ComponentPropsWithRef<"div"> {
 }
 
 /** A layout that switches between horizontal and vertical at a set breakpoint. */
-export const Switcher = React.forwardRef<HTMLDivElement, SwitcherProps>(
-  function Switcher(
-    { align = "normal", children, className, limit, space = 0, threshold },
-    ref,
-  ) {
-    const switcherProperties: CSSProperties = {
-      ["--switcher-align"]: align,
-      ["--switcher-space"]: space,
-      ["--switcher-threshold"]: threshold,
-    };
-    return (
-      <div
-        className={cx(
-          "switcher",
-          {
-            limit2: limit === 2,
-            limit3: limit === 3,
-            limit4: limit === 4,
-          },
-          className,
-        )}
-        ref={ref}
-        style={switcherProperties}
-      >
-        {children}
-      </div>
-    );
-  },
-);
+export const Switcher = React.forwardRef(function Switcher(
+  {
+    align = "normal",
+    children,
+    className,
+    limit,
+    space = "0",
+    threshold,
+  }: SwitcherProps,
+  ref: React.ForwardedRef<HTMLDivElement>,
+) {
+  const switcherProperties: CSSProperties = {
+    ["--switcher-align"]: align,
+    ["--switcher-space"]: space,
+    ["--switcher-threshold"]: threshold,
+  };
+  return (
+    <div
+      className={cx(
+        "switcher",
+        {
+          limit2: limit === 2,
+          limit3: limit === 3,
+          limit4: limit === 4,
+        },
+        className,
+      )}
+      ref={ref}
+      style={switcherProperties}
+    >
+      {children}
+    </div>
+  );
+});

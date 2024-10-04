@@ -1,5 +1,13 @@
 # @gaze-ui/react
 
+## 0.5.0
+
+### Minor Changes
+
+- [#18](https://github.com/studio-drishti/gaze/pull/18) [`2ec8ddb`](https://github.com/studio-drishti/gaze/commit/2ec8ddbf34a7809f2e5c01a5b51bd4e528194716) Thanks [@jnlsn](https://github.com/jnlsn)! - Stack is now flex. Improved Box.
+
+- [#16](https://github.com/studio-drishti/gaze/pull/16) [`9d1d6c1`](https://github.com/studio-drishti/gaze/commit/9d1d6c1068581b73e348dcbfa6ba97d8bec64b07) Thanks [@jnlsn](https://github.com/jnlsn)! - Tokens migrated to style dictionary v4 and rewritten to improve readability.
+
 ## 0.4.0
 
 ### Minor Changes

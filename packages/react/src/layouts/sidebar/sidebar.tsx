@@ -45,7 +45,12 @@ export const Sidebar = React.forwardRef(function Sidebar(
   return (
     <div
       {...props}
-      className={cx("sidebar", { reverse }, side, className)}
+      className={cx(
+        "gaze-sidebar",
+        { ["gaze-sidebar-reverse"]: reverse },
+        `gaze-sidebar-${side}`,
+        className,
+      )}
       ref={ref}
       style={cssProperties}
     >

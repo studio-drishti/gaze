@@ -1,4 +1,4 @@
-.stack {
+.gaze-stack {
   display: flex;
   flex-direction: column;
   gap: var(--stack-space);

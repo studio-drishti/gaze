@@ -36,7 +36,7 @@ export const Frame = React.forwardRef(function Frame(
   return (
     <div
       {...props}
-      className={cx("frame", className)}
+      className={cx("gaze-frame", className)}
       ref={ref}
       style={cssProperties}
     >

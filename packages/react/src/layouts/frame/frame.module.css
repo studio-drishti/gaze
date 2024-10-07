@@ -1,4 +1,4 @@
-.frame {
+.gaze-frame {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
@@ -9,7 +9,7 @@
   border-radius: var(--frame-radius);
 }
 
-.frame > * {
+.gaze-frame > * {
   inline-size: 100%;
   block-size: 100%;
   object-fit: var(--frame-fit);

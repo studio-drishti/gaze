@@ -1,15 +1,15 @@
-.center {
+.gaze-center {
   box-sizing: content-box;
   max-inline-size: var(--center-width);
   margin-inline: auto;
   padding-inline: var(--center-gutter);
 }
 
-.text {
+.gaze-center-text {
   text-align: center;
 }
 
-.intrinsic {
+.gaze-center-intrinsic {
   display: flex;
   flex-direction: column;
   align-items: center;

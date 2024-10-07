@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
-import { Center, Frame } from "@gaze-ui/react";
+import { Center, Frame } from "@gaze-ui/react/src";
 import * as React from "react";
 
 import harpoJpg from "../assets/harpo.jpg";

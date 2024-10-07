@@ -36,12 +36,8 @@ export const Switcher = React.forwardRef(function Switcher(
   return (
     <div
       className={cx(
-        "switcher",
-        {
-          limit2: limit === 2,
-          limit3: limit === 3,
-          limit4: limit === 4,
-        },
+        "gaze-switcher",
+        `gaze-switcher-limit-${limit.toString()}`,
         className,
       )}
       ref={ref}

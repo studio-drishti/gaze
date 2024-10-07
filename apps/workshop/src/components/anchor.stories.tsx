@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
-import { Anchor } from "@gaze-ui/react";
+import { Anchor } from "@gaze-ui/react/src";
 
 const meta: Meta<typeof Anchor> = {
   component: Anchor,

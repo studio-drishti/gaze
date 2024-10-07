@@ -1,4 +1,4 @@
-.box {
+.gaze-box {
   padding: var(--box-py) var(--box-px);
   background: var(--box-bg);
   border-color: var(--box-bc);
@@ -7,8 +7,8 @@
   border-radius: var(--box-rad);
 }
 
-.box,
-.box > * {
+.gaze-box,
+.gaze-box > * {
   --box-py: 0;
   --box-px: 0;
   --box-bg: transparent;

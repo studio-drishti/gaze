@@ -1,3 +1,4 @@
 {
-  "extends": ["@gaze-ui/stylelint-config"]
+  "extends": ["@gaze-ui/stylelint-config"],
+  "ignoreFiles": ["**/dist/**", "**/node_modules/**"]
 }

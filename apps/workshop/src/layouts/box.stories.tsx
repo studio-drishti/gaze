@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
-import { Box } from "@gaze-ui/react";
+import { Box } from "@gaze-ui/react/src";
 
 const meta: Meta<typeof Box> = {
   component: Box,

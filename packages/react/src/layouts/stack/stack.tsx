@@ -36,7 +36,7 @@ export const Stack = React.forwardRef(function Stack(
   return (
     <div
       {...props}
-      className={cx("stack", className)}
+      className={cx("gaze-stack", className)}
       ref={ref}
       style={stackProperties}
     >

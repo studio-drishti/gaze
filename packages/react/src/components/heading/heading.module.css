@@ -1,4 +1,4 @@
-.heading {
+.gaze-heading {
   margin: 0;
   font-weight: var(--heading-weight);
   font-size: var(--heading-size);
@@ -6,41 +6,41 @@
   line-height: var(--heading-leading);
 }
 
-[data-invert="true"] .heading {
+[data-invert="true"] .gaze-heading {
   color: var(--gaze-color-white);
 }
 
-.h1 {
+.gaze-h1 {
   --heading-weight: var(--gaze-h1-weight);
   --heading-size: var(--gaze-h1-size,);
   --heading-leading: var(--gaze-h1-leading);
 }
 
-.h2 {
+.gaze-h2 {
   --heading-weight: var(--gaze-h2-weight);
   --heading-size: var(--gaze-h2-size,);
   --heading-leading: var(--gaze-h2-leading);
 }
 
-.h3 {
+.gaze-h3 {
   --heading-weight: var(--gaze-h3-weight);
   --heading-size: var(--gaze-h3-size,);
   --heading-leading: var(--gaze-h3-leading);
 }
 
-.h4 {
+.gaze-h4 {
   --heading-weight: var(--gaze-h4-weight);
   --heading-size: var(--gaze-h4-size,);
   --heading-leading: var(--gaze-h4-leading);
 }
 
-.h5 {
+.gaze-h5 {
   --heading-weight: var(--gaze-h5-weight);
   --heading-size: var(--gaze-h5-size,);
   --heading-leading: var(--gaze-h5-leading);
 }
 
-.h6 {
+.gaze-h6 {
   --heading-weight: var(--gaze-h6-weight);
   --heading-size: var(--gaze-h6-size,);
   --heading-leading: var(--gaze-h6-leading);

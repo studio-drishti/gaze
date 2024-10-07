@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
-import { Box, Center, Sidebar } from "@gaze-ui/react";
+import { Box, Center, Sidebar } from "@gaze-ui/react/src";
 import * as React from "react";
 
 const meta: Meta<typeof Sidebar> = {
@@ -14,6 +14,7 @@ type Story = StoryObj<typeof Sidebar>;
 
 export const Left: Story = {
   args: {
+    side: "left",
     sideWidth: "20rem",
     space: "var(--gaze-space-10)",
   },

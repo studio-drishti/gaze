@@ -22,7 +22,7 @@ export const Heading = React.forwardRef(function Heading(
   const headingVariant = variant ?? HeadingComponent;
   return (
     <HeadingComponent
-      className={cx("heading", headingVariant, className)}
+      className={cx("gaze-heading", `gaze-${headingVariant}`, className)}
       ref={ref}
     >
       {children}

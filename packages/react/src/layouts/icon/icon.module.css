@@ -1,4 +1,4 @@
-.icon > svg {
+.gaze-icon > svg {
   display: inline-block;
   width: 0.75em;
   width: 1cap;
@@ -6,7 +6,7 @@
   height: 1cap;
 }
 
-.icon {
+.gaze-icon {
   display: inline-flex;
   flex-wrap: nowrap;
   align-items: center;
@@ -16,14 +16,14 @@
   font-family: var(--gaze-font-family-base);
 }
 
-.with-text {
+.gaze-icon-with-text {
   align-items: baseline;
 }
 
-.with-text > svg {
+.gaze-icon-with-text > svg {
   margin-inline-end: var(--icon-space);
 }
 
-[data-invert="true"] .icon {
+[data-invert="true"] .gaze-icon {
   color: var(--gaze-color-text-inverted);
 }

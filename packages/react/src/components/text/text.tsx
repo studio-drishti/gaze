@@ -50,7 +50,7 @@ export const Text = React.forwardRef(function Text(
 
   return (
     <TextComponent
-      className={cx("text", className)}
+      className={cx("gaze-text", className)}
       ref={ref}
       style={cssProperties}
     >

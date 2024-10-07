@@ -13,7 +13,7 @@ export const Anchor = React.forwardRef(function Anchor(
   ref: React.ForwardedRef<HTMLAnchorElement>,
 ) {
   return (
-    <a className={cx("anchor", className)} ref={ref} {...props}>
+    <a className={cx("gaze-anchor", className)} ref={ref} {...props}>
       {children}
     </a>
   );

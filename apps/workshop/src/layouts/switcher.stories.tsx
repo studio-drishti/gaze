@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
-import { Box, Switcher } from "@gaze-ui/react";
+import { Box, Switcher } from "@gaze-ui/react/src";
 import * as React from "react";
 
 const meta: Meta<typeof Switcher> = {

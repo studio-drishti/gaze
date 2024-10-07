@@ -16,6 +16,13 @@ You may optionally wish to use the Gaze ESLint, Stylelint and TypeScript configu
 npm install --save-dev @gaze-ui/tsconfig @gaze-ui/eslint-config @gaze-ui/stylelint-config
 ```
 
+Import the variables and base styles into your application.
+
+```js
+import "@gaze-ui/tokens/css/variables.css";
+import "@gaze-ui/react/styles.css";
+```
+
 ## Customizing
 
 Many theme properties may be customized by setting custom CSS property in the `:root` space.

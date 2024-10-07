@@ -1,5 +1,16 @@
 # workshop
 
+## 1.0.0
+
+### Major Changes
+
+- [#20](https://github.com/studio-drishti/gaze/pull/20) [`20a5644`](https://github.com/studio-drishti/gaze/commit/20a5644bb5f1020fd6ee4fd4d0ede05dc256c49b) Thanks [@jnlsn](https://github.com/jnlsn)! - Bundle and ship gaze as esm and cjs package with tsup.
+
+### Patch Changes
+
+- Updated dependencies [[`20a5644`](https://github.com/studio-drishti/gaze/commit/20a5644bb5f1020fd6ee4fd4d0ede05dc256c49b)]:
+  - @gaze-ui/react@1.0.0
+
 ## 0.2.0
 
 ### Minor Changes

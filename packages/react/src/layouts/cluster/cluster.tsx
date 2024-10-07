@@ -36,7 +36,7 @@ export const Cluster = React.forwardRef(function Cluster(
   return (
     <div
       {...props}
-      className={cx("cluster", className)}
+      className={cx("gaze-cluster", className)}
       ref={ref}
       style={clusterProperties}
     >

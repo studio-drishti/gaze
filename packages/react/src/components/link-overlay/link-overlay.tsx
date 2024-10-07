@@ -13,7 +13,7 @@ export const LinkOverlay = React.forwardRef(function LinkOverlay(
   ref: React.ForwardedRef<HTMLAnchorElement>,
 ) {
   return (
-    <a {...props} className={cx("link-overlay", className)} ref={ref}>
+    <a {...props} className={cx("gaze-link-overlay", className)} ref={ref}>
       {children}
     </a>
   );
@@ -26,7 +26,7 @@ export const LinkBox = React.forwardRef(function LinkBox(
   ref: React.ForwardedRef<HTMLDivElement>,
 ) {
   return (
-    <div {...props} className={cx("link-box", className)} ref={ref}>
+    <div {...props} className={cx("gaze-link-box", className)} ref={ref}>
       {children}
     </div>
   );

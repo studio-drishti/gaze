@@ -1,19 +1,19 @@
-.link-box {
+.gaze-link-box {
   position: relative;
   border-radius: var(--gaze-radius-sm);
 
-  & a[href]:not(.link-overlay) {
+  & a[href]:not(.gaze-link-overlay) {
     position: relative;
     z-index: 1;
   }
 
-  &:has(.link-overlay:focus-visible) {
+  &:has(.gaze-link-overlay:focus-visible) {
     outline: var(--gaze-color-outline-default) solid var(--gaze-border-width-px);
     outline-offset: 0.25em;
   }
 }
 
-.link-overlay {
+.gaze-link-overlay {
   position: static;
   color: unset;
   text-decoration: unset;

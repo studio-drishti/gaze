@@ -1,20 +1,20 @@
-.switcher {
+.gaze-switcher {
   display: flex;
   flex-wrap: wrap;
   gap: var(--switcher-space);
   align-items: var(--switcher-align);
 }
 
-.switcher > * {
+.gaze-switcher > * {
   flex-basis: calc((var(--switcher-threshold) - 100%) * 999);
   flex-grow: 1;
 }
 
-.limit4 > :nth-last-child(n + 5),
-.limit4 > :nth-last-child(n + 5) ~ *,
-.limit3 > :nth-child(n + 4),
-.limit3 > :nth-child(n + 4) ~ *,
-.limit2 > :nth-child(n + 3),
-.limit2 > :nth-child(n + 3) ~ * {
+.gaze-switcher-limit-4 > :nth-last-child(n + 5),
+.gaze-switcher-limit-4 > :nth-last-child(n + 5) ~ *,
+.gaze-switcher-limit-3 > :nth-child(n + 4),
+.gaze-switcher-limit-3 > :nth-child(n + 4) ~ *,
+.gaze-switcher-limit-2 > :nth-child(n + 3),
+.gaze-switcher-limit-2 > :nth-child(n + 3) ~ * {
   flex-basis: 100%;
 }

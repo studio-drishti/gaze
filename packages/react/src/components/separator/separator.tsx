@@ -34,7 +34,7 @@ export const Separator = React.forwardRef(function Separator(
   return (
     <hr
       aria-orientation="horizontal"
-      className={cx("separator", className)}
+      className={cx("gaze-separator", className)}
       ref={ref}
       style={separatorProperties}
     />

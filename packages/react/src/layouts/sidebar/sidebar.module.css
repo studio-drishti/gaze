@@ -1,23 +1,23 @@
-.sidebar {
+.gaze-sidebar {
   display: flex;
   flex-wrap: wrap;
   gap: var(--sidebar-space);
   align-items: var(--sidebar-align);
 }
 
-.left > :first-child,
-.right > :last-child {
+.gaze-sidebar-left > :first-child,
+.gaze-sidebar-right > :last-child {
   flex-basis: var(--sidebar-width);
   flex-grow: 1;
 }
 
-.left > :last-child,
-.right > :first-child {
+.gaze-sidebar-left > :last-child,
+.gaze-sidebar-right > :first-child {
   flex-basis: 0;
   flex-grow: 999;
   min-inline-size: var(--sidebar-min);
 }
 
-.reverse {
+.gaze-sidebar-reverse {
   flex-direction: row-reverse;
 }

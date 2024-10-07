@@ -72,7 +72,7 @@ export const Box = React.forwardRef(function Box(
   return (
     <Component
       {...props}
-      className={cx("box", className)}
+      className={cx("gaze-box", className)}
       ref={ref}
       style={boxProperties}
     >

@@ -14,7 +14,8 @@
     "segoe",
     "neue",
     "menlo",
-    "consolas"
+    "consolas",
+    "tsup"
   ],
   "flagWords": ["hte"],
   "allowCompoundWords": true,

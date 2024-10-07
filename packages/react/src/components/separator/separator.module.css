@@ -1,4 +1,4 @@
-.separator {
+.gaze-separator {
   height: 0;
   margin: 0;
   border-style: var(--separator-variant, "solid");
@@ -7,6 +7,6 @@
   border-top-width: var(--separator-thickness, var(--gaze-border-width-px));
 }
 
-[data-invert="true"] .separator {
+[data-invert="true"] .gaze-separator {
   border-top-color: var(--separator-color, var(--gaze-color-text-inverted));
 }

@@ -35,8 +35,11 @@ export const Center = React.forwardRef(function Center(
     <div
       {...props}
       className={cx(
-        "center",
-        { intrinsic: intrinsicCenter, text: textCenter },
+        "gaze-center",
+        {
+          ["gaze-center-intrinsic"]: intrinsicCenter,
+          ["gaze-center-text"]: textCenter,
+        },
         className,
       )}
       ref={ref}

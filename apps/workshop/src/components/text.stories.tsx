@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
-import { Text } from "@gaze-ui/react";
+import { Text } from "@gaze-ui/react/src";
 
 const meta: Meta<typeof Text> = {
   component: Text,

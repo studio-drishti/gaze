@@ -1,7 +1,7 @@
 import type { Preview } from "@storybook/react";
 
-import "@gaze-ui/react/styles/base.css";
 import "@gaze-ui/tokens/css/variables.css";
+import "@gaze-ui/react/src/styles.css";
 
 const preview: Preview = {
   parameters: {

@@ -1,4 +1,4 @@
-.text {
+.gaze-text {
   margin: 0;
   color: var(--text-color, var(--gaze-color-text-default));
   font-weight: var(--text-weight, var(--gaze-weight-normal));
@@ -7,20 +7,20 @@
   line-height: var(--text-leading, var(--gaze-leading-normal));
 }
 
-[data-invert="true"] .text {
+[data-invert="true"] .gaze-text {
   color: var(--gaze-color-text-inverted);
 }
 
-em.text,
-i.text {
+em.gaze-text,
+i.gaze-text {
   font-style: italic;
 }
 
-strong.text,
-b.text {
+strong.gaze-text,
+b.gaze-text {
   font-weight: var(--gaze-weight-bold);
 }
 
-u.text {
+u.gaze-text {
   text-decoration: underline;
 }

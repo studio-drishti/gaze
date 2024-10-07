@@ -1,4 +1,4 @@
-.anchor {
+.gaze-anchor {
   color: inherit;
   font-family: var(--gaze-font-family-base);
   text-decoration: underline;
@@ -6,11 +6,11 @@
   cursor: pointer;
 }
 
-.anchor:hover {
+.gaze-anchor:hover {
   text-decoration: none;
 }
 
-.anchor:focus-visible {
+.gaze-anchor:focus-visible {
   outline: var(--gaze-border-width-px) solid var(--gaze-color-outline-default);
   outline-offset: 0.25em;
 }

@@ -34,8 +34,8 @@ export const Icon = React.forwardRef(function Icon(
       {...props}
       aria-label={label}
       className={cx(
-        "icon",
-        { ["with-text"]: React.Children.count(children) > 1 },
+        "gaze-icon",
+        { ["gaze-icon-with-text"]: React.Children.count(children) > 1 },
         className,
       )}
       ref={ref}

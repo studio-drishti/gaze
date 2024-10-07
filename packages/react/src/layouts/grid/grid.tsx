@@ -26,7 +26,7 @@ export const Grid = React.forwardRef<HTMLDivElement, GridProps>(function Grid(
   return (
     <div
       {...props}
-      className={cx("grid", className)}
+      className={cx("gaze-grid", className)}
       ref={ref}
       style={gridProperties}
     >

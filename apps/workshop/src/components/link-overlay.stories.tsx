@@ -7,7 +7,7 @@ import {
   LinkOverlay,
   Stack,
   Text,
-} from "@gaze-ui/react";
+} from "@gaze-ui/react/src";
 import React from "react";
 
 const meta: Meta<typeof LinkOverlay> = {

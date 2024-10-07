@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
-import { Separator } from "@gaze-ui/react";
+import { Separator } from "@gaze-ui/react/src";
 
 const meta: Meta<typeof Separator> = {
   component: Separator,

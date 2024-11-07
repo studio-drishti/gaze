@@ -1,5 +1,11 @@
 # @gaze-ui/react
 
+## 1.0.1
+
+### Patch Changes
+
+- [#22](https://github.com/studio-drishti/gaze/pull/22) [`5d4e65a`](https://github.com/studio-drishti/gaze/commit/5d4e65a7b3a027b8cf7becca6e5231e5412bc93d) Thanks [@jnlsn](https://github.com/jnlsn)! - Minor layout CSS fixes.
+
 ## 1.0.0
 
 ### Major Changes

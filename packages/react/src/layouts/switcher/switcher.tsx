@@ -10,6 +10,8 @@ export interface SwitcherProps extends React.ComponentPropsWithRef<"div"> {
   align?: string;
   /** Max number of elements that can appear in a row. */
   limit: 2 | 3 | 4;
+  /** Should the order of elements be reversed when not wrapping? */
+  reverse?: boolean;
   /** The space between child elements. */
   space?: string;
   /** Breadking point where the layout switches between horizontal and vertical. */
@@ -23,6 +25,7 @@ export const Switcher = React.forwardRef(function Switcher(
     children,
     className,
     limit,
+    reverse = false,
     space = "0",
     threshold,
   }: SwitcherProps,
@@ -38,6 +41,7 @@ export const Switcher = React.forwardRef(function Switcher(
       className={cx(
         "gaze-switcher",
         `gaze-switcher-limit-${limit.toString()}`,
+        { ["gaze-switcher-reverse"]: reverse },
         className,
       )}
       ref={ref}

@@ -10,7 +10,7 @@ export interface SidebarProps extends React.ComponentPropsWithRef<"div"> {
   align?: string;
   /** Narrowest the main element can be before wrapping. */
   minimum?: `${number}%`;
-  /** Should the order of elements be reversed when not wrapping? Useful if you want the sidebar stacked in a certain order. */
+  /** Should the order of elements be reversed when not wrapping? */
   reverse?: boolean;
   /** The side of the layout which should be considerethe sidebar. */
   side?: "left" | "right";

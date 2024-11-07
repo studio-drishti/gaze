@@ -60,3 +60,25 @@ export const Align: Story = {
     </Switcher>
   ),
 };
+
+export const Reverse: Story = {
+  args: {
+    align: "center",
+    limit: 3,
+    reverse: true,
+    space: "var(--gaze-space-40)",
+    threshold: "40rem",
+  },
+  render: (args) => (
+    <Switcher {...args}>
+      <Box
+        background="var(--gaze-color-blue-500)"
+        padding="var(--gaze-space-50)"
+      />
+      <Box
+        background="var(--gaze-color-purple-500)"
+        padding="var(--gaze-space-50)"
+      />
+    </Switcher>
+  ),
+};

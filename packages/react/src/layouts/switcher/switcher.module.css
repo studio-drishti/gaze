@@ -18,3 +18,7 @@
 .gaze-switcher-limit-2 > :nth-child(n + 3) ~ * {
   flex-basis: 100%;
 }
+
+.gaze-switcher-reverse {
+  flex-direction: row-reverse;
+}

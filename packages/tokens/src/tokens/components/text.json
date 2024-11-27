@@ -1,0 +1,7 @@
+{
+  "text": {
+    "weight": {
+      "$value": "{weight.normal}"
+    }
+  }
+}

@@ -17,13 +17,18 @@ export default tseslint.config(
       "*.pdf",
       "*.svg",
       "**/dist/**",
-      "coverage*",
-      "node_modules",
+      "**/coverage/**",
+      "**/node_modules/**",
     ],
   },
   {
     linterOptions: {
       reportUnusedDisableDirectives: "error",
+    },
+  },
+  {
+    n: {
+      tryExtensions: [".js", ".ts"],
     },
   },
   eslint.configs.recommended,

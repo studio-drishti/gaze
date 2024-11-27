@@ -1,7 +1,7 @@
 .gaze-text {
   margin: 0;
   color: var(--text-color, var(--gaze-color-text-default));
-  font-weight: var(--text-weight, var(--gaze-weight-normal));
+  font-weight: var(--text-weight, var(--gaze-text-weight));
   font-size: var(--text-size, var(--gaze-font-size-base));
   font-family: var(--gaze-font-family-base);
   line-height: var(--text-leading, var(--gaze-leading-normal));

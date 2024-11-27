@@ -6,6 +6,14 @@ import styles from "./text.module.css";
 
 const cx = classNames.bind(styles);
 
+export interface TextProps extends React.ComponentPropsWithRef<"p"> {
+  as?: TextElementOptions;
+  color?: string;
+  fontSize?: string;
+  leading?: string;
+  weight?: string;
+}
+
 type TextElementOptions =
   | "b"
   | "div"
@@ -15,14 +23,6 @@ type TextElementOptions =
   | "span"
   | "strong"
   | "u";
-
-export interface TextProps extends React.ComponentPropsWithRef<"p"> {
-  as?: TextElementOptions;
-  color?: string;
-  fontSize?: string;
-  leading?: string;
-  weight?: string;
-}
 
 /** Paragraphs and text. */
 export const Text = React.forwardRef(function Text(

@@ -1,5 +1,13 @@
 # @gaze-ui/eslint-config
 
+## 1.0.1
+
+### Patch Changes
+
+- [#24](https://github.com/studio-drishti/gaze/pull/24) [`517324e`](https://github.com/studio-drishti/gaze/commit/517324e784a4522feaa4d841ae2279d693dd4372) Thanks [@jnlsn](https://github.com/jnlsn)! - allow text and heading fonts to be overridden.
+
+- [#24](https://github.com/studio-drishti/gaze/pull/24) [`517324e`](https://github.com/studio-drishti/gaze/commit/517324e784a4522feaa4d841ae2279d693dd4372) Thanks [@jnlsn](https://github.com/jnlsn)! - Update dependencies.
+
 ## 1.0.0
 
 ### Major Changes

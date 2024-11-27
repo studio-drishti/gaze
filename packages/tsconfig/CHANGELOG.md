@@ -1,5 +1,11 @@
 # @gaze-ui/tsconfig
 
+## 0.2.2
+
+### Patch Changes
+
+- [#24](https://github.com/studio-drishti/gaze/pull/24) [`517324e`](https://github.com/studio-drishti/gaze/commit/517324e784a4522feaa4d841ae2279d693dd4372) Thanks [@jnlsn](https://github.com/jnlsn)! - Update dependencies.
+
 ## 0.2.1
 
 ### Patch Changes

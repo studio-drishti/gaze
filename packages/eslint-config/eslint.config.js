@@ -26,11 +26,6 @@ export default tseslint.config(
       reportUnusedDisableDirectives: "error",
     },
   },
-  {
-    n: {
-      tryExtensions: [".js", ".ts"],
-    },
-  },
   eslint.configs.recommended,
   n.configs["flat/recommended"],
   perfectionist.configs["recommended-natural"],
@@ -58,7 +53,9 @@ export default tseslint.config(
           type: "natural",
         },
       ],
+      "sonarjs/no-empty-function": "off",
       "sonarjs/no-small-switch": "off",
+      "sonarjs/no-unused-expressions": "off",
       "sonarjs/todo-tag": "off",
       "unicorn/prevent-abbreviations": "off",
     },
